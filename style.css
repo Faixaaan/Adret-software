@@ -1,0 +1,25 @@
+/* Import Montserrat Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Global Font */
+* {
+  font-family: 'Montserrat', sans-serif !important;
+  box-sizing: border-box;
+}
+
+/* Navbar Active Link */
+.navbar-nav .nav-link.active {
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: #fff !important;
+  border-radius: 6px;
+  padding: 6px 14px;
+}
+
+
+.navbar-nav .nav-link {
+  margin: 0 3px; /* horizontal space between links */
+  padding: 6px 2px; /* a bit of internal padding for clickable area */
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+

@@ -1,6 +1,12 @@
 /* Import Montserrat Font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Global Font */
 * {
   font-family: 'Montserrat', sans-serif !important;
@@ -22,4 +28,460 @@
   border-radius: 6px;
   transition: all 0.3s ease;
 }
+
+.banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Banner content on the left */
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  text-align: left;
+  color: white;
+  max-width: 40%;
+  z-index: 2;
+}
+
+/* Optional overlay for better text visibility */
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+h2{
+    font-size: 36px;
+  font-weight: bold;
+}
+
+.banner-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 15px 0px;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* ===== Responsive ===== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .banner-content {
+    left: 5%;
+    max-width: 60%;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .banner-content {
+    top: auto;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .banner-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .banner-content p {
+    font-size: 0.95rem;
+  }
+}
+
+.content-section {
+  background-color: white;
+  padding: 80px 0;
+}
+
+.text-section h2 {
+  font-size: 36px;
+  color: #000000; /* accent color, change as needed */
+  font-weight: 600;
+  max-width: 400px;
+  margin: 20px 0px;
+  font-family: Montserrat;
+}
+
+.text-section h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: #00409E;
+  font-family: Montserrat;
+}
+
+.text-section p {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  font-family: Montserrat;
+  font-weight: 500;
+  max-width: 500px;
+}
+
+.text-section .btn {
+  background-color: #00409E;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  transition: all 0.3s ease;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.text-section .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .text-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .text-section h1 {
+    font-size: 2rem;
+    text-align: center;
+    max-width: 100%!important;
+  }
+
+  .text-section p {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+.experience-tag {
+  position: absolute;
+  bottom: -90px;
+  right: -90px;
+  background-color: #fff;
+  color: #00409E;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.experience-tag h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.experience-tag p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .text-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .experience-tag {
+    position: static;
+    margin: 20px auto 0;
+  }
+}
+
+/* didgital solution */
+
+.main-section {
+  background-color: #F0F0F0; /* main div background */
+  padding: 60px 20px;
+}
+
+.heading {
+  color: #000;
+  margin-bottom: 36px;
+  font-weight: 600;
+  max-width: 715px;
+
+}
+
+.header-section {
+  width: 100%; 
+  text-align: center; 
+  margin-bottom: 50px;
+}
+
+.heading {
+  width: 715px; 
+  margin: 0 auto;    
+  font-family: Montserrat;    
+}
+
+
+/* Card Styling */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  background-color: #00409E!important;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-body h5 {
+  font-weight: 600;
+}
+
+.card-body p {
+  color: #fff;
+}
+
+@media (max-width: 992px) {  /* tablets */
+  .heading {
+    width: 100%;    /* almost full width */
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {  /* mobiles */
+  .heading {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
+
+.custom-card {
+  background-color: #00409E;
+  color: #fff;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Responsive spacing for small screens */
+@media (max-width: 576px) {
+  .custom-card {
+    padding: 20px;
+  }
+  .card-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.main-section-potential{
+  background-color: #fff;
+  padding: 60px 20px;
+}
+.custom-card-potential{
+  background-color: #F0F0F0;
+}
+.card-icon-potential{
+  width: 60px;
+  height: 60px;
+}
+.custom-card-potential {
+  background-color: #F0F0F0;  /* Blue background */
+  border-radius: 15px;        /* Rounded corners for the card */
+  text-align: center;
+  padding: 2rem;
+  color: #000;                /* White text for contrast */
+  position: relative;
+  min-height: 320px;
+}
+
+.card-icon-potential {
+  width: 100px;                /* Icon size */
+  height: 100px;
+  border-radius: 50%;         /* Makes the image circular */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1rem;        /* Centers the icon and adds bottom margin */
+  background-color: #00409E;     /* Optional: white circle behind icon */
+  padding: 10px;              /* Optional: spacing inside the circle */
+}
+
+
+/* ---------- CLEAN FOOTER STYLE ---------- */
+.footer {
+  background-color: #D9D9D9; /* Light grey background */
+  color: #000; /* Default black text */
+  padding: 60px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Headings (Services, Support, Company) */
+.footer h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #000;
+  position: relative;
+}
+
+.footer h5::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #000; /* Blue accent underline */
+}
+
+/* Paragraphs */
+.footer p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #000;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+/* Anchor links */
+.footer a {
+  color: #000; /* Black links */
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color: #0d6efd; /* Blue hover */
+  transform: translateX(3px);
+}
+
+/* Social Icons */
+.footer .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer .social-icons a {
+  color: #000;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #0d6efd;
+  transform: translateY(-2px);
+}
+
+/* Logo */
+.footer img.footer-logo {
+  max-width: 160px;
+  margin-bottom: 15px;
+}
+
+/* Responsive Layout */
+@media (max-width: 991px) {
+  .footer {
+    text-align: center;
+  }
+  .footer .social-icons {
+    justify-content: center;
+  }
+  .footer h5::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 40px 0;
+  }
+  .footer p {
+    font-size: 14px;
+  }
+}
+.footer .social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #fff; /* Blue background */
+  color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s, background-color 0.3s;
+  text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+  transform: translateY(-3px);
+  background-color: #00409E; /* Yellow on hover */
+  color: #fff;
+}
+
+.footer .social-icons a img{
+  width: 24px;
+  height: 24px;
+}
+
+.footer .social-icons a img:hover {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
 

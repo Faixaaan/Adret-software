@@ -477,6 +477,131 @@ h2{
   color: #fff;
 }
 
+/* section */
+
+.expert-section {
+  background-color: #003da5; /* same deep blue */
+  padding: 100px 0px!important;
+}
+
+.expert-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #4a90e2;
+  object-fit: cover;
+}
+
+
+.section-h2{
+  font-size: 20xp;
+  font-weight: 600;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+.right-heading{
+  font-size: 20px;
+}
+.section-para{
+  max-width: 300px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .expert-section {
+    text-align: center;
+  }
+  .expert-img {
+    margin-bottom: 15px;
+  }
+  .d-flex.align-items-center {
+    flex-direction: column !important;
+  }
+  form {
+    justify-content: center;
+  }
+  .expert-section form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .expert-section form input,
+  .expert-section form button {
+    width: 100%;
+    max-width: 100%;
+  }
+  @media (max-width: 768px) {
+  .expert-section form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .expert-section form input,
+  .expert-section form button {
+    width: 100% !important;
+  }
+}
+.section-para{
+  max-width: 100%;
+}
+
+}
+
+.testimonial-section {
+  background-color: #fff;
+}
+
+.testimonial-card {
+  background-color: #86B5E18A;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-paragraph{
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px!important;
+}
+
+/* Dots */
+.carousel-indicators [data-bs-target] {
+  background-color: #003da5;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background-color: #002b73;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .testimonial-card {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
 
 
 

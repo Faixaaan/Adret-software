@@ -29,6 +29,62 @@ body{
   transition: all 0.3s ease;
 }
 
+/* ===== Navbar Fix: Keep Logo and Hamburger in Same Line ===== */
+
+.navbar {
+  position: relative;
+  z-index: 10;
+}
+
+.navbar .container,
+.navbar .container-fluid {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important; /* prevents wrapping */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  flex-direction: row!important;
+}
+
+.navbar-toggler {
+  margin-left: auto; /* pushes toggler to right */
+  border: none;
+}
+
+/* optional: adjust spacing for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-brand img {
+    height: 48px !important;
+  }
+}
+
+/* === Mobile Drawer Styling === */
+.offcanvas {
+  background-color: #ffffff;
+  width: 200px; /* drawer width */
+}
+
+.offcanvas .nav-link {
+  color: #000 !important;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.offcanvas .nav-link.active {
+  color: #0a4db3 !important;
+}
+
+
+
+
 .banner {
   position: relative;
   width: 100%;
@@ -231,7 +287,7 @@ h2{
 
 .main-section {
   background-color: #F0F0F0; /* main div background */
-  padding: 60px 20px;
+  padding: 60px 0px;
 }
 
 .heading {
@@ -322,7 +378,7 @@ h2{
 
 .main-section-potential{
   background-color: #fff;
-  padding: 60px 20px;
+  padding: 60px 0px;
 }
 .custom-card-potential{
   background-color: #F0F0F0;
@@ -514,9 +570,9 @@ h2{
   .expert-img {
     margin-bottom: 15px;
   }
-  .d-flex.align-items-center {
+  /* .d-flex.align-items-center {
     flex-direction: column !important;
-  }
+  } */
   form {
     justify-content: center;
   }
@@ -548,6 +604,7 @@ h2{
 
 .testimonial-section {
   background-color: #fff;
+  padding: 150px 0px!important;
 }
 
 .testimonial-card {
@@ -602,11 +659,104 @@ h2{
 }
 
 
+/* === WHY CHOOSE US SECTION === */
 
+.why-section {
+  background-color: #0a4db3;
+  color: #ffffff;
+  padding: 80px 0 0;
+}
 
+.why-section h6 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+}
 
+.why-section h2 {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
 
+.why-section p {
+  color: #d9e3f0;
+  font-size: 16px;
+  line-height: 1.7;
+}
 
+/* Right column small headings */
+.why-section .fw-bold {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
 
+/* === STATS BOX === */
+.stats-box {
+  background: #ffffff;
+  color: #0a4db3;
+  padding: 50px 0;
+  margin-top: 150px;
+  box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1); /* ✅ added subtle shadow */
+  border-radius: 4px; /* optional: slight curve for smooth edges */
+}
 
+.stats-box h3 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
 
+.stats-box p {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 992px) {
+  .why-section {
+    text-align: center;
+    padding: 60px 0 0;
+  }
+
+  .why-section h2 {
+    font-size: 28px;
+  }
+
+  .stats-box h3 {
+    font-size: 28px;
+  }
+
+  .stats-box p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .why-section {
+    padding: 50px 0 0;
+  }
+
+  .why-section h2 {
+    font-size: 24px;
+  }
+
+  .why-section p {
+    font-size: 14px;
+  }
+
+  .stats-box {
+    padding: 30px 0;
+  }
+
+  .stats-box h3 {
+    font-size: 24px;
+  }
+}

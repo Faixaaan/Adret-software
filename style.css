@@ -226,6 +226,10 @@ h2{
   .text-section {
     text-align: center;
     margin-bottom: 30px;
+    
+  }
+  .content-section{
+    padding: 50px 0px;
   }
 
   .text-section h1 {
@@ -238,6 +242,9 @@ h2{
     font-size: 1rem;
     text-align: center;
     max-width: 100%;
+  }
+  .text-section h2{
+    font-size: 28px;
   }
 }
 
@@ -503,6 +510,7 @@ h2{
   }
   .footer p {
     font-size: 14px;
+    max-width: 100%;
   }
 }
 .footer .social-icons a {
@@ -656,6 +664,7 @@ h2{
     width: 50px;
     height: 50px;
   }
+  
 }
 
 

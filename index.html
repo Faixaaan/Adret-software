@@ -24,63 +24,78 @@
 
   <body>
     <!-- navbar -->
-     <nav class="navbar navbar-expand-xl navbar-light py-1">
-  <div class="container d-flex justify-content-between align-items-center">
+    <nav class="navbar navbar-expand-xl navbar-light py-1">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Left: Logo -->
+        <a
+          class="navbar-brand d-flex align-items-center"
+          href="#"
+          style="gap: 6px"
+        >
+          <img
+            src="./images/Adret-Software.png"
+            alt="Adret Logo"
+            style="height: 55px; object-fit: contain; display: block"
+          />
+        </a>
 
-    <!-- Left: Logo -->
-    <a class="navbar-brand d-flex align-items-center " href="#" style="gap: 6px">
-      <img
-        src="./images/Adret-Software.png"
-        alt="Adret Logo"
-        style="height: 55px; object-fit: contain; display: block"
-      />
-    </a>
+        <!-- Toggler (Drawer trigger for mobile) -->
+        <button
+          class="navbar-toggler d-xl-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Toggler (Drawer trigger for mobile) -->
-    <button
-      class="navbar-toggler d-xl-none"
-      type="button"
-      data-bs-toggle="offcanvas"
-      data-bs-target="#mobileMenu"
-      aria-controls="mobileMenu"
+        <!-- Desktop Navbar -->
+        <div
+          class="collapse navbar-collapse justify-content-end d-none d-xl-flex"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav align-items-center">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="/about-us">About us</a>
+            <a class="nav-link" href="/client-hire">Client Hire us</a>
+            <a class="nav-link" href="/services">Services</a>
+            <a class="nav-link" href="/contact-us">Contact us</a>
+            <a class="nav-link" href="/pages">Pages</a>
+            <a class="nav-link" href="/get-started">GET STARTED</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Offcanvas Drawer for Mobile/Tablet -->
+    <div
+      class="offcanvas offcanvas-end d-xl-none"
+      tabindex="-1"
+      id="mobileMenu"
+      aria-labelledby="mobileMenuLabel"
     >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Desktop Navbar -->
-    <div class="collapse navbar-collapse justify-content-end d-none d-xl-flex" id="navbarNavAltMarkup">
-      <div class="navbar-nav align-items-center">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="/about-us">About us</a>
-        <a class="nav-link" href="/client-hire">Client Hire us</a>
-        <a class="nav-link" href="/services">Services</a>
-        <a class="nav-link" href="/contact-us">Contact us</a>
-        <a class="nav-link" href="/pages">Pages</a>
-        <a class="nav-link" href="/get-started">GET STARTED</a>
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="/about-us">About us</a>
+          <a class="nav-link" href="/client-hire">Client Hire us</a>
+          <a class="nav-link" href="/services">Services</a>
+          <a class="nav-link" href="/contact-us">Contact us</a>
+          <a class="nav-link" href="/pages">Pages</a>
+          <a class="nav-link" href="/get-started">GET STARTED</a>
+        </div>
       </div>
     </div>
-
-  </div>
-</nav>
-
-<!-- Offcanvas Drawer for Mobile/Tablet -->
-<div class="offcanvas offcanvas-end d-xl-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="navbar-nav">
-      <a class="nav-link active" aria-current="page" href="#">Home</a>
-      <a class="nav-link" href="/about-us">About us</a>
-      <a class="nav-link" href="/client-hire">Client Hire us</a>
-      <a class="nav-link" href="/services">Services</a>
-      <a class="nav-link" href="/contact-us">Contact us</a>
-      <a class="nav-link" href="/pages">Pages</a>
-      <a class="nav-link" href="/get-started">GET STARTED</a>
-    </div>
-  </div>
-</div>
 
     <!-- banner section -->
     <div class="banner position-relative">
@@ -263,7 +278,7 @@
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry.
                 </p>
-            </div>
+              </div>
             </div>
           </div>
         </div>
@@ -271,8 +286,8 @@
     </div>
 
     <!-- work together   -->
-    
-     <section class="team-section">
+
+    <section class="team-section">
       <div class="container position-relative">
         <div class="row align-items-center">
           <!-- LEFT TEXT -->
@@ -283,24 +298,32 @@
 
             <div class="feature-item d-flex align-items-start mb-4">
               <div class="icon-circle me-3">
-                <img src="https://cdn-icons-png.flaticon.com/512/2830/2830321.png" alt="Icon 1" />
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2830/2830321.png"
+                  alt="Icon 1"
+                />
               </div>
               <div>
                 <h5 class="fw-semibold mb-1">Prestigious & Professional</h5>
                 <p class="mb-0">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
                 </p>
               </div>
             </div>
 
             <div class="feature-item d-flex align-items-start">
               <div class="icon-circle me-3">
-                <img src="https://cdn-icons-png.flaticon.com/512/3202/3202926.png" alt="Icon 2" />
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/3202/3202926.png"
+                  alt="Icon 2"
+                />
               </div>
               <div>
                 <h5 class="fw-semibold mb-1">Support & Knowledge</h5>
                 <p class="mb-0">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
                 </p>
               </div>
             </div>
@@ -322,10 +345,10 @@
 
     <section class="services-section py-5">
       <div class="container text-center">
-        <p class="text-uppercase fw-semibold text-primary mb-2">What We Offer</p>
-        <h2 class=" mb-5 offer-h2">
-          Connecting Customers With Your Brand
-        </h2>
+        <p class="text-uppercase fw-semibold text-primary mb-2">
+          What We Offer
+        </p>
+        <h2 class="mb-5 offer-h2">Connecting Customers With Your Brand</h2>
 
         <div class="row g-4">
           <!-- Card 1 -->
@@ -339,7 +362,8 @@
               </div>
               <h5 class="fw-bold">Digital Marketing</h5>
               <p class="mb-0 offer-para">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
               </p>
             </div>
           </div>
@@ -355,7 +379,8 @@
               </div>
               <h5 class="fw-bold">Email Marketing</h5>
               <p class="mb-0 offer-para">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
               </p>
             </div>
           </div>
@@ -371,7 +396,8 @@
               </div>
               <h5 class="fw-bold">Social Media Services</h5>
               <p class="mb-0 offer-para">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
               </p>
             </div>
           </div>
@@ -387,7 +413,8 @@
               </div>
               <h5 class="fw-bold">SEO Services</h5>
               <p class="mb-0 offer-para">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
               </p>
             </div>
           </div>
@@ -403,7 +430,8 @@
               </div>
               <h5 class="fw-bold">PPC Management</h5>
               <p class="mb-0 offer-para">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
               </p>
             </div>
           </div>
@@ -419,7 +447,8 @@
               </div>
               <h5 class="fw-bold">Content Marketing</h5>
               <p class="mb-0 offer-para">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
               </p>
             </div>
           </div>
@@ -429,436 +458,657 @@
 
     <!-- trusted organization -->
 
-    <section class="trusted-section ">
-  <div class="container text-center">
-    <div class="heading-div">
-<h2 class="fw-bold mb-2">
-      Trusted by 25,000+ world-class brands and organization of all sizes
-    </h2>
-    </div>
-    
-    <p class="text-muted mb-5">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-    </p>
+    <section class="trusted-section">
+      <div class="container text-center">
+        <div class="heading-div">
+          <h2 class="fw-bold mb-2">
+            Trusted by 25,000+ world-class brands and organization of all sizes
+          </h2>
+        </div>
 
-    <div class="row g-3">
-      <!-- Repeat for each logo -->
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-1.webp" alt="Logo 1" class="img-fluid">
-        </div>
-      </div>
+        <p class="text-muted mb-5">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
 
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-2.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-3.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-4.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-5.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-6.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-7.webp" alt="Logo 1" class="img-fluid">
-        </div>
-      </div>
+        <div class="row g-3">
+          <!-- Repeat for each logo -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-1.webp"
+                alt="Logo 1"
+                class="img-fluid"
+              />
+            </div>
+          </div>
 
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-8.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-9.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-10.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-11.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-12.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-13.webp" alt="Logo 1" class="img-fluid">
-        </div>
-      </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-2.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-3.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-4.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-5.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-6.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-7.webp"
+                alt="Logo 1"
+                class="img-fluid"
+              />
+            </div>
+          </div>
 
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-14.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-15.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-16.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-17.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-18.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-19.webp" alt="Logo 1" class="img-fluid">
-        </div>
-      </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-8.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-9.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-10.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-11.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-12.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-13.webp"
+                alt="Logo 1"
+                class="img-fluid"
+              />
+            </div>
+          </div>
 
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-20.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-21.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-22.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-23.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-24.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-25.webp" alt="Logo 1" class="img-fluid">
-        </div>
-      </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-14.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-15.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-16.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-17.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-18.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-19.webp"
+                alt="Logo 1"
+                class="img-fluid"
+              />
+            </div>
+          </div>
 
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-26.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-27.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-28.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-29.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-30.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-31.webp" alt="Logo 1" class="img-fluid">
-        </div>
-      </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-20.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-21.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-22.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-23.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-24.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-25.webp"
+                alt="Logo 1"
+                class="img-fluid"
+              />
+            </div>
+          </div>
 
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-32.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-33.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-34.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-35.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-36.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-37.webp" alt="Logo 1" class="img-fluid">
-        </div>
-      </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-26.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-27.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-28.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-29.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-30.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-31.webp"
+                alt="Logo 1"
+                class="img-fluid"
+              />
+            </div>
+          </div>
 
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-38.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-39.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-        <div class="brand-box">
-          <img src="./images/client-40.webp" alt="Logo 2" class="img-fluid">
-        </div>
-      </div>
-      
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-32.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-33.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-34.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-35.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-36.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-37.webp"
+                alt="Logo 1"
+                class="img-fluid"
+              />
+            </div>
+          </div>
 
-      <!-- Add more logos here -->
-    </div>
-  </div>
-</section>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-38.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-39.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="brand-box">
+              <img
+                src="./images/client-40.webp"
+                alt="Logo 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
 
+          <!-- Add more logos here -->
+        </div>
+      </div>
+    </section>
 
     <!-- why choose us  -->
 
     <section class="why-section">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-lg-6 col-md-12">
-          <h6 class="text-uppercase mb-3">Why Choose Us</h6>
-          <h2 class="mb-3">We are here for we always give you satisfaction</h2>
-          <p>Tailored solutions for diverse needs, delivering service excellence, innovation, and commitment for your success and satisfaction</p>
-        </div>
-        <div class="col-lg-6 col-md-12">
-          <div class="row gy-4">
-            <div class="col-sm-6">
-              <h6 class="fw-bold">Leading a Team of 500+ Digital Marketing Expert</h6>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-            <div class="col-sm-6">
-              <h6 class="fw-bold">Dashboard access for optimizing, measuring, and reporting ROI</h6>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-            <div class="col-sm-6">
-              <h6 class="fw-bold">In Depth analysis of your business goals, industry and competitors</h6>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-            <div class="col-sm-6">
-              <h6 class="fw-bold">24/7 help desk, and direct client phone line</h6>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 col-md-12">
+            <h6 class="text-uppercase mb-3">Why Choose Us</h6>
+            <h2 class="mb-3">
+              We are here for we always give you satisfaction
+            </h2>
+            <p>
+              Tailored solutions for diverse needs, delivering service
+              excellence, innovation, and commitment for your success and
+              satisfaction
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="row gy-4">
+              <div class="col-sm-6">
+                <h6 class="fw-bold">
+                  Leading a Team of 500+ Digital Marketing Expert
+                </h6>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <h6 class="fw-bold">
+                  Dashboard access for optimizing, measuring, and reporting ROI
+                </h6>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <h6 class="fw-bold">
+                  In Depth analysis of your business goals, industry and
+                  competitors
+                </h6>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <h6 class="fw-bold">
+                  24/7 help desk, and direct client phone line
+                </h6>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Stats Section -->
-      <div class="row stats-box text-center">
-        <div class="col-6 col-md-3">
-          <h3>50K+</h3>
-          <p>HAPPY CLIENTS</p>
-        </div>
-        <div class="col-6 col-md-3">
-          <h3>500+</h3>
-          <p>MARKETING EXPERT</p>
-        </div>
-        <div class="col-6 col-md-3 mt-4 mt-md-0">
-          <h3>7M+</h3>
-          <p>LEADS GENERATED</p>
-        </div>
-        <div class="col-6 col-md-3 mt-4 mt-md-0">
-          <h3>6B+</h3>
-          <p>REVENUE DRIVEN</p>
+        <!-- Stats Section -->
+        <div class="row stats-box text-center">
+          <div class="col-6 col-md-3">
+            <h3>50K+</h3>
+            <p>HAPPY CLIENTS</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <h3>500+</h3>
+            <p>MARKETING EXPERT</p>
+          </div>
+          <div class="col-6 col-md-3 mt-4 mt-md-0">
+            <h3>7M+</h3>
+            <p>LEADS GENERATED</p>
+          </div>
+          <div class="col-6 col-md-3 mt-4 mt-md-0">
+            <h3>6B+</h3>
+            <p>REVENUE DRIVEN</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <!-- Testimonial -->
 
-    <section class="testimonial-section ">
-  <div class="container text-center">
-    <h6 class="text-primary fw-bold mb-2">TESTIMONIAL</h6>
-    <h2 class="fw-bold mb-4 testimonial-paragraph">Clients Feedback & Review</h2>
+    <section class="testimonial-section">
+      <div class="container text-center">
+        <h6 class="text-primary fw-bold mb-2">TESTIMONIAL</h6>
+        <h2 class="fw-bold mb-4 testimonial-paragraph">
+          Clients Feedback & Review
+        </h2>
 
-    <!-- Carousel -->
-    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <div class="row justify-content-center g-4">
-            
-            <!-- Card 1 -->
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="testimonial-card p-4">
-                <div class="d-flex align-items-center mb-3">
-                  <img src="./images/Ellipse 14.png" alt="Jane Cooper" class="testimonial-img me-3">
-                  <div>
-                    <h6 class="fw-bold mb-0">Jane Cooper</h6>
-                    <p class="text-muted mb-0 small">Georgia</p>
+        <!-- Carousel -->
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center g-4">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="testimonial-card p-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <img
+                        src="./images/Ellipse 14.png"
+                        alt="Jane Cooper"
+                        class="testimonial-img me-3"
+                      />
+                      <div>
+                        <h6 class="fw-bold mb-0">Jane Cooper</h6>
+                        <p class="text-muted mb-0 small">Georgia</p>
+                      </div>
+                    </div>
+                    <p class="small mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div class="text-warning">★★★★★</div>
                   </div>
                 </div>
-                <p class="small mb-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <div class="text-warning">
-                  ★★★★★
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="testimonial-card p-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <img
+                        src="./images/Ellipse 20.png"
+                        alt="Esther Howard"
+                        class="testimonial-img me-3"
+                      />
+                      <div>
+                        <h6 class="fw-bold mb-0">Esther Howard</h6>
+                        <p class="text-muted mb-0 small">Brazil</p>
+                      </div>
+                    </div>
+                    <p class="small mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div class="text-warning">★★★★★</div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="testimonial-card p-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <img
+                        src="./images/Ellipse 16.png"
+                        alt="Jacob Jones"
+                        class="testimonial-img me-3"
+                      />
+                      <div>
+                        <h6 class="fw-bold mb-0">Jacob Jones</h6>
+                        <p class="text-muted mb-0 small">Israel</p>
+                      </div>
+                    </div>
+                    <p class="small mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div class="text-warning">★★★★★</div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="testimonial-card p-4">
-                <div class="d-flex align-items-center mb-3">
-                  <img src="./images/Ellipse 20.png" alt="Esther Howard" class="testimonial-img me-3">
-                  <div>
-                    <h6 class="fw-bold mb-0">Esther Howard</h6>
-                    <p class="text-muted mb-0 small">Brazil</p>
+            <!-- Duplicate slides for carousel looping -->
+            <div class="carousel-item">
+              <div class="row justify-content-center g-4">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="testimonial-card p-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <img
+                        src="./images/Ellipse 14.png"
+                        alt="Jane Cooper"
+                        class="testimonial-img me-3"
+                      />
+                      <div>
+                        <h6 class="fw-bold mb-0">Jane Cooper</h6>
+                        <p class="text-muted mb-0 small">Georgia</p>
+                      </div>
+                    </div>
+                    <p class="small mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div class="text-warning">★★★★★</div>
                   </div>
                 </div>
-                <p class="small mb-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <div class="text-warning">
-                  ★★★★★
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="testimonial-card p-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <img
+                        src="./images/Ellipse 20.png"
+                        alt="Esther Howard"
+                        class="testimonial-img me-3"
+                      />
+                      <div>
+                        <h6 class="fw-bold mb-0">Esther Howard</h6>
+                        <p class="text-muted mb-0 small">Brazil</p>
+                      </div>
+                    </div>
+                    <p class="small mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div class="text-warning">★★★★★</div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="testimonial-card p-4">
+                    <div class="d-flex align-items-center mb-3">
+                      <img
+                        src="./images/Ellipse 16.png"
+                        alt="Jacob Jones"
+                        class="testimonial-img me-3"
+                      />
+                      <div>
+                        <h6 class="fw-bold mb-0">Jacob Jones</h6>
+                        <p class="text-muted mb-0 small">Israel</p>
+                      </div>
+                    </div>
+                    <p class="small mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div class="text-warning">★★★★★</div>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <!-- Card 3 -->
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="testimonial-card p-4">
-                <div class="d-flex align-items-center mb-3">
-                  <img src="./images/Ellipse 16.png" alt="Jacob Jones" class="testimonial-img me-3">
-                  <div>
-                    <h6 class="fw-bold mb-0">Jacob Jones</h6>
-                    <p class="text-muted mb-0 small">Israel</p>
-                  </div>
-                </div>
-                <p class="small mb-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <div class="text-warning">
-                  ★★★★★
-                </div>
-              </div>
-            </div>
-
+          <!-- Dots -->
+          <div class="carousel-indicators mt-4">
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="1"
+            ></button>
           </div>
         </div>
-
-        <!-- Duplicate slides for carousel looping -->
-        <div class="carousel-item">
-          <div class="row justify-content-center g-4">
-            <!-- Card 1 -->
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="testimonial-card p-4">
-                <div class="d-flex align-items-center mb-3">
-                  <img src="./images/Ellipse 14.png" alt="Jane Cooper" class="testimonial-img me-3">
-                  <div>
-                    <h6 class="fw-bold mb-0">Jane Cooper</h6>
-                    <p class="text-muted mb-0 small">Georgia</p>
-                  </div>
-                </div>
-                <p class="small mb-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <div class="text-warning">
-                  ★★★★★
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="testimonial-card p-4">
-                <div class="d-flex align-items-center mb-3">
-                  <img src="./images/Ellipse 20.png" alt="Esther Howard" class="testimonial-img me-3">
-                  <div>
-                    <h6 class="fw-bold mb-0">Esther Howard</h6>
-                    <p class="text-muted mb-0 small">Brazil</p>
-                  </div>
-                </div>
-                <p class="small mb-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <div class="text-warning">
-                  ★★★★★
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="testimonial-card p-4">
-                <div class="d-flex align-items-center mb-3">
-                  <img src="./images/Ellipse 16.png" alt="Jacob Jones" class="testimonial-img me-3">
-                  <div>
-                    <h6 class="fw-bold mb-0">Jacob Jones</h6>
-                    <p class="text-muted mb-0 small">Israel</p>
-                  </div>
-                </div>
-                <p class="small mb-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <div class="text-warning">
-                  ★★★★★
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
-
-      <!-- Dots -->
-      <div class="carousel-indicators mt-4">
-        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!--marketing expert section -->
 

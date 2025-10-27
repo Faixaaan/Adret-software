@@ -255,7 +255,7 @@ h2{
 
 .experience-tag {
   position: absolute;
-  bottom: -90px;
+  bottom: -20px;
   right: -90px;
   background-color: #fff;
   color: #00409E;
@@ -1011,13 +1011,57 @@ h2 {
 .service-item {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
   padding: 10px 0;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .service-item i {
   color: #0d6efd;
   margin-right: 10px;
   font-size: 18px;
+}
+
+
+.email-section {
+  display: flex;
+  margin-top: 25px;
+}
+
+.email-section input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  padding: 10px;
+  outline: none;
+}
+
+.email-section .btn {
+  border-radius: 0;
+  font-weight: 600;
+  background-color: #0d6efd;
+  border: none;
+  white-space: nowrap;
+}
+
+.email-section .btn:hover {
+  background-color: #0045c5;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 576px) {
+  .services-section h2 {
+    font-size: 28px;
+  }
+
+  .email-section {
+    flex-direction: column;
+  }
+
+  .email-section input,
+  .email-section .btn {
+    width: 100%;
+    border-radius: 0;
+    margin-top: 8px;
+  }
 }

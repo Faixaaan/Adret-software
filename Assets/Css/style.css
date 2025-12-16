@@ -105,7 +105,7 @@ body{
   transform: translateY(-50%);
   text-align: left;
   color: white;
-  max-width: 40%;
+  width: 100% !important;
   z-index: 2;
 }
 
@@ -157,6 +157,12 @@ h2{
   .banner-content p {
     font-size: 1rem;
   }
+  .banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 350px;
+}
 }
 
 /* Mobile */
@@ -177,6 +183,12 @@ h2{
   .banner-content p {
     font-size: 0.95rem;
   }
+  .banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  height: 100%;
+}
 }
 
 .content-section {
@@ -678,8 +690,10 @@ h2{
 .why-section {
   background-color: #0a4db3;
   color: #ffffff;
-  padding: 80px 0 0;
+  padding: 80px 0px !important;
+  position: relative;
 }
+
 
 .why-section h6 {
   font-size: 14px;
@@ -716,8 +730,11 @@ h2{
   color: #0a4db3;
   padding: 50px 0;
   margin-top: 150px;
-  box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1); /* ✅ added subtle shadow */
+  box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.5); /* ✅ added subtle shadow */
   border-radius: 4px; /* optional: slight curve for smooth edges */
+  position: absolute;
+  bottom: -120px;
+  width: 93%;
 }
 
 .stats-box h3 {
@@ -768,6 +785,7 @@ h2{
 
   .stats-box {
     padding: 30px 0;
+    width: 100%;
   }
 
   .stats-box h3 {
@@ -784,7 +802,7 @@ body {
 }
 
 .team-section {
-  background-color: #004aad;
+  background-color: #00409E;
   padding: 100px 0;
   position: relative;
   overflow: hidden;
@@ -1736,6 +1754,7 @@ h2 {
   .testimonial-section {
     background-color: #fff;
     padding: 20px 0px !important;
+    margin-top: 18%;
   }
 
   .service-banner-image{
@@ -1743,6 +1762,30 @@ h2 {
   }
 
 }
+@media (max-width: 500px) {
+  
+
+  .testimonial-section {
+    background-color: #fff;
+    padding: 20px 0px !important;
+    margin-top: 38%;
+  }
+
+ 
+
+}
+
+.service-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
 
 
 /* === WHY CHOOSE US SECTION === */
@@ -2162,3 +2205,5 @@ h2 {
     width: 100%;
   }
 }
+
+

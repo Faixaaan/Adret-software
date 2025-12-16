@@ -20,6 +20,10 @@ body{
   border-radius: 6px;
   padding: 6px 14px;
 }
+.offcanvas .navbar-nav .nav-link.active {
+  background-color: #007bff;
+  color: #ffffff !important;
+}
 
 
 .navbar-nav .nav-link {
@@ -34,6 +38,7 @@ body{
 .navbar {
   position: relative;
   z-index: 10;
+  
 }
 
 .navbar .container,
@@ -466,7 +471,7 @@ h2{
   line-height: 1.8;
   color: #000;
   margin-bottom: 20px;
-  max-width: 300px;
+  max-width: 100%;
 }
 
 /* Anchor links */
@@ -519,11 +524,15 @@ h2{
     left: 50%;
     transform: translateX(-50%);
   }
+  .footer p {
+    font-size: 14px;
+    max-width: 100% !important;
+  }
 }
 
 @media (max-width: 576px) {
   .footer {
-    padding: 40px 0;
+    padding: 0px 0;
   }
   .footer p {
     font-size: 14px;
@@ -561,7 +570,7 @@ h2{
 /* section */
 
 .expert-section {
-  background-color: #003da5; /* same deep blue */
+  background-color: #00409E; /* same deep blue */
   padding: 100px 0px!important;
 }
 
@@ -588,9 +597,10 @@ h2{
 }
 
 /* Responsive tweaks */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .expert-section {
     text-align: center;
+    padding: 50px 0px !important;
   }
   .expert-img {
     margin-bottom: 15px;

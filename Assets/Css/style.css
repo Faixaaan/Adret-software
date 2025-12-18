@@ -899,7 +899,8 @@ body {
 }
 
 .image-area {
-  position: relative;
+  position: absolute;
+  bottom: 0px;
 }
 
 .image-area img {

@@ -1,96 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adret Software</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <link rel="stylesheet" href="./Assets/Css/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- Font Awesome CDN -->
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adret Software</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-xl navbar-light py-1">
-      <div class="container d-flex justify-content-between align-items-center">
-        <!-- Left: Logo -->
-        <a
-          class="navbar-brand d-flex align-items-center"
-          href="/"
-          style="gap: 6px"
-        >
-          <img
-            src="./Assets/Images/Adret-Software.png"
-            alt="Adret Logo"
-            style="height: 55px; object-fit: contain; display: block"
-          />
-        </a>
+  <link rel="stylesheet" href="./Assets/Css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Font Awesome CDN -->
+</head>
 
-        <!-- Toggler (Drawer trigger for mobile) -->
-        <button
-          class="navbar-toggler d-xl-none"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#mobileMenu"
-          aria-controls="mobileMenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-xl navbar-light py-1">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Left: Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="/" style="gap: 6px">
+        <img src="./Assets/Images/Adret-Software.png" alt="Adret Logo"
+          style="height: 55px; object-fit: contain; display: block" />
+      </a>
 
-        <!-- Desktop Navbar -->
-        <div
-          class="collapse navbar-collapse justify-content-end d-none d-xl-flex"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav align-items-center">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-            <a class="nav-link" href="/Aboutus.html">About us</a>
-            <a class="nav-link" href="/client.html">Client</a>
-            <a class="nav-link" href="/hire-us">Hire us</a>
-            <a class="nav-link" href="/service.html">Services</a>
-            <a class="nav-link" href="/contactUs.html">Contact us</a>
-            <a class="nav-link" href="/pages">Pages</a>
-            <a class="nav-link" href="/get-started">GET STARTED</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+      <!-- Toggler (Drawer trigger for mobile) -->
+      <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+        aria-controls="mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Offcanvas Drawer for Mobile/Tablet -->
-    <div
-      class="offcanvas offcanvas-end d-xl-none"
-      tabindex="-1"
-      id="mobileMenu"
-      aria-labelledby="mobileMenuLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
-        <button
-          type="button"
-          class="btn-close text-reset"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="navbar-nav">
+      <!-- Desktop Navbar -->
+      <div class="collapse navbar-collapse justify-content-end d-none d-xl-flex" id="navbarNavAltMarkup">
+        <div class="navbar-nav align-items-center">
           <a class="nav-link active" aria-current="page" href="/">Home</a>
           <a class="nav-link" href="/Aboutus.html">About us</a>
           <a class="nav-link" href="/client.html">Client</a>
-           <a class="nav-link" href="/hire-us">Hire us</a>
+          <a class="nav-link" href="/hire-us">Hire us</a>
           <a class="nav-link" href="/service.html">Services</a>
           <a class="nav-link" href="/contactUs.html">Contact us</a>
           <a class="nav-link" href="/pages">Pages</a>
@@ -98,1173 +45,905 @@
         </div>
       </div>
     </div>
+  </nav>
 
-    <!-- banner section -->
-    <div class="banner position-relative">
-     
-      <img src="./Assets/Images/Banner.png" alt="Banner" class="w-100 d-block" />
+  <!-- Offcanvas Drawer for Mobile/Tablet -->
+  <div class="offcanvas offcanvas-end d-xl-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="/">Home</a>
+        <a class="nav-link" href="/Aboutus.html">About us</a>
+        <a class="nav-link" href="/client.html">Client</a>
+        <a class="nav-link" href="/hire-us">Hire us</a>
+        <a class="nav-link" href="/service.html">Services</a>
+        <a class="nav-link" href="/contactUs.html">Contact us</a>
+        <a class="nav-link" href="/pages">Pages</a>
+        <a class="nav-link" href="/get-started">GET STARTED</a>
+      </div>
+    </div>
+  </div>
 
-      <!-- keep container for alignment -->
-      <div class="container">
-        <div class="banner-content">
-          <h2>Welcome to Adret Software</h2>
-          <h1>Drives Growth with Digital Strategies.</h1>
+  <!-- banner section -->
+  <div class="banner position-relative">
+
+    <img src="./Assets/Images/Banner.png" alt="Banner" class="w-100 d-block" />
+
+    <!-- keep container for alignment -->
+    <div class="container">
+      <div class="banner-content">
+        <h2>Welcome to Adret Software</h2>
+        <h1>Drives Growth with Digital Strategies.</h1>
+        <p>
+          Adret Software Services is one of the leading companies in the web
+          and software development industry. We have a team of seasoned skills
+          and creative minds who are deft at providing perfect web solutions
+          to give you a competitive edge.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- who we are  -->
+
+  <div class="content-section position-relative">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left side (text content) -->
+        <div class="col-lg-6 col-md-12 col-12 text-section position-relative">
+          <h4>WHO WE ARE</h4>
+          <h2>We deliver revenue generating digital marketing solution</h2>
           <p>
-            Adret Software Services is one of the leading companies in the web
-            and software development industry. We have a team of seasoned skills
-            and creative minds who are deft at providing perfect web solutions
-            to give you a competitive edge.
+            Tailored solutions for diverse needs, delivering service
+            excellence, innovation, and commitment for your success and
+            satisfaction
+          </p>
+          <button class="btn btn-primary">DISCOVER MORE ></button>
+
+          <!-- Circular Tag -->
+          <div class="experience-tag">
+            <h3>15+</h3>
+            <p>Years Experience</p>
+          </div>
+        </div>
+
+        <!-- Right side (image) -->
+        <div class="col-lg-6 col-md-12 col-12 text-center">
+          <img src="./Assets/Images/Rectangle 5.png" alt="Illustration" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Digital Marketing Solution -->
+  <div class="main-section">
+    <div class="container text-center">
+      <div class="header-section">
+        <h2 class="heading">
+          We’re a leader in tech enabled digital marketing solution
+        </h2>
+      </div>
+
+      <div class="container my-5">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="custom-card text-center p-4">
+              <img src="./Assets/Images/social-media 1.png" alt="SEO Icon" class="card-icon mb-3" />
+              <h5>Search Engine Optimization</h5>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="custom-card text-center p-4">
+              <img src="./Assets/Images/paid-content 1.png" alt="Paid Media Icon" class="card-icon mb-3" />
+              <h5>Paid Media Management</h5>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="custom-card text-center p-4">
+              <img src="./Assets/Images/seo 1.png" alt="Social Icon" class="card-icon mb-3" />
+              <h5>Social Marketing</h5>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- potential digital marketing -->
+  <div class="main-section-potential">
+    <div class="container text-center">
+      <div class="header-section">
+        <h2 class="heading">Unleashing the Potential of Digital Marketing</h2>
+      </div>
+
+      <div class="container my-5">
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="custom-card-potential">
+              <img src="./Assets/Images/social-media 1.png" alt="SEO Icon" class="card-icon-potential" />
+              <h5>Discovery</h5>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="custom-card-potential">
+              <img src="./Assets/Images/paid-content 1.png" alt="Paid Media Icon" class="card-icon-potential" />
+              <h5>Strategies</h5>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="custom-card-potential">
+              <img src="./Assets/Images/seo 1.png" alt="Social Icon" class="card-icon-potential" />
+              <h5>Implementation</h5>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="custom-card-potential">
+              <img src="./Assets/Images/seo 1.png" alt="Social Icon" class="card-icon-potential" />
+              <h5>Analysis & Optimization</h5>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- work together   -->
+
+  <section class="team-section position-relative">
+    <div class="container">
+      <div class="row align-items-center ">
+        <!-- LEFT TEXT -->
+        <div class="col-lg-4 col-md-12 text-white content-area justify-content-lg-start">
+          <h2 class="fw-bold mb-4 text-white">
+            If you can laugh together, you can work together
+          </h2>
+
+          <div class="feature-item d-flex align-items-start mb-4">
+            <div class="icon-circle me-3">
+              <img src="https://cdn-icons-png.flaticon.com/512/2830/2830321.png" alt="Icon 1" />
+            </div>
+            <div>
+              <h5 class="fw-semibold mb-1">Prestigious & Professional</h5>
+              <p class="mb-0">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-item d-flex align-items-start">
+            <div class="icon-circle me-3">
+              <img src="https://cdn-icons-png.flaticon.com/512/3202/3202926.png" alt="Icon 2" />
+            </div>
+            <div>
+              <h5 class="fw-semibold mb-1">Support & Knowledge</h5>
+              <p class="mb-0">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="col-lg-8 col-md-12 image-area text-center ">
+          <img src="./Assets/Images/Rectangle 15.png" alt="Team Image" class="img-fluid rounded shadow" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- who we offer  -->
+
+  <section class="services-section py-5">
+    <div class="container text-center">
+      <p class="text-uppercase fw-semibold text-primary mb-2">
+        What We Offer
+      </p>
+      <h2 class="mb-5 offer-h2">Connecting Customers With Your Brand</h2>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card p-5">
+            <div class="icon-wrapper mb-4">
+              <img src="https://cdn-icons-png.flaticon.com/512/2645/2645897.png" alt="Digital Marketing" />
+            </div>
+            <h5 class="fw-bold">Digital Marketing</h5>
+            <p class="mb-0 offer-para">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card p-5">
+            <div class="icon-wrapper mb-4">
+              <img src="https://cdn-icons-png.flaticon.com/512/646/646094.png" alt="Email Marketing" />
+            </div>
+            <h5 class="fw-bold">Email Marketing</h5>
+            <p class="mb-0 offer-para">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card p-5">
+            <div class="icon-wrapper mb-4">
+              <img src="https://cdn-icons-png.flaticon.com/512/2165/2165004.png" alt="Social Media" />
+            </div>
+            <h5 class="fw-bold">Social Media Services</h5>
+            <p class="mb-0 offer-para">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card p-5">
+            <div class="icon-wrapper mb-4">
+              <img src="https://cdn-icons-png.flaticon.com/512/906/906343.png" alt="SEO Services" />
+            </div>
+            <h5 class="fw-bold">SEO Services</h5>
+            <p class="mb-0 offer-para">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card p-5">
+            <div class="icon-wrapper mb-4">
+              <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="PPC Management" />
+            </div>
+            <h5 class="fw-bold">PPC Management</h5>
+            <p class="mb-0 offer-para">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card p-5">
+            <div class="icon-wrapper mb-4">
+              <img src="https://cdn-icons-png.flaticon.com/512/2645/2645889.png" alt="Content Marketing" />
+            </div>
+            <h5 class="fw-bold">Content Marketing</h5>
+            <p class="mb-0 offer-para">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- trusted organization -->
+
+  <section class="trusted-section">
+    <div class="container text-center">
+      <div class="heading-div">
+        <h2 class="fw-bold mb-2">
+          Trusted by 25,000+ world-class brands and organization of all sizes
+        </h2>
+      </div>
+
+      <p class="text-muted mb-5">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry.
+      </p>
+
+      <div class="row g-3">
+        <!-- Repeat for each logo -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-1.webp" alt="Logo 1" class="img-fluid" />
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-2.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-3.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-4.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-5.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-6.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-7.webp" alt="Logo 1" class="img-fluid" />
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-8.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-9.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-10.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-11.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-12.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-13.webp" alt="Logo 1" class="img-fluid" />
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-14.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-15.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-16.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-17.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-18.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-19.webp" alt="Logo 1" class="img-fluid" />
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-20.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-21.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-22.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-23.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-24.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-25.webp" alt="Logo 1" class="img-fluid" />
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-26.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-27.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-28.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-29.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-30.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-31.webp" alt="Logo 1" class="img-fluid" />
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-32.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-33.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-34.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-35.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-36.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-37.webp" alt="Logo 1" class="img-fluid" />
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-38.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-39.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="brand-box">
+            <img src="./Assets/Images/client-40.webp" alt="Logo 2" class="img-fluid" />
+          </div>
+        </div>
+
+        <!-- Add more logos here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- why choose us  -->
+
+  <section class="why-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-5 col-md-12">
+          <h6 class="text-uppercase mb-3">Why Choose Us</h6>
+          <h2 class="mb-3 text-white">
+            We are here for we always give you satisfaction
+          </h2>
+          <p class="">
+            Tailored solutions for diverse needs, delivering service
+            excellence, innovation, and commitment for your success and
+            satisfaction
           </p>
         </div>
-      </div>
-    </div>
-
-    <!-- who we are  -->
-
-    <div class="content-section position-relative">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- Left side (text content) -->
-          <div class="col-lg-6 col-md-12 col-12 text-section position-relative">
-            <h4>WHO WE ARE</h4>
-            <h2>We deliver revenue generating digital marketing solution</h2>
-            <p>
-              Tailored solutions for diverse needs, delivering service
-              excellence, innovation, and commitment for your success and
-              satisfaction
-            </p>
-            <button class="btn btn-primary">DISCOVER MORE ></button>
-
-            <!-- Circular Tag -->
-            <div class="experience-tag">
-              <h3>15+</h3>
-              <p>Years Experience</p>
+        <div class="col-lg-7 col-md-12">
+          <div class="row gy-4">
+            <div class="col-sm-6">
+              <h6 class="fw-bold">
+                Leading a Team of 500+ Digital Marketing Expert
+              </h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
             </div>
-          </div>
-
-          <!-- Right side (image) -->
-          <div class="col-lg-6 col-md-12 col-12 text-center">
-            <img
-              src="./Assets/Images/Rectangle 5.png"
-              alt="Illustration"
-              class="img-fluid"
-            />
+            <div class="col-sm-6">
+              <h6 class="fw-bold">
+                Dashboard access for optimizing, measuring, and reporting ROI
+              </h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <h6 class="fw-bold">
+                In Depth analysis of your business goals, industry and
+                competitors
+              </h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <h6 class="fw-bold">
+                24/7 help desk, and direct client phone line
+              </h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Digital Marketing Solution -->
-    <div class="main-section">
-      <div class="container text-center">
-        <div class="header-section">
-          <h2 class="heading">
-            We’re a leader in tech enabled digital marketing solution
-          </h2>
+      <!-- Stats Section -->
+      <div class="row stats-box text-center">
+        <div class="col-6 col-md-3">
+          <h3>50K+</h3>
+          <p>HAPPY CLIENTS</p>
         </div>
-
-        <div class="container my-5">
-          <div class="row g-4">
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="custom-card text-center p-4">
-                <img
-                  src="./Assets/Images/social-media 1.png"
-                  alt="SEO Icon"
-                  class="card-icon mb-3"
-                />
-                <h5>Search Engine Optimization</h5>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="custom-card text-center p-4">
-                <img
-                  src="./Assets/Images/paid-content 1.png"
-                  alt="Paid Media Icon"
-                  class="card-icon mb-3"
-                />
-                <h5>Paid Media Management</h5>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <div class="custom-card text-center p-4">
-                <img
-                  src="./Assets/Images/seo 1.png"
-                  alt="Social Icon"
-                  class="card-icon mb-3"
-                />
-                <h5>Social Marketing</h5>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="col-6 col-md-3">
+          <h3>500+</h3>
+          <p>MARKETING EXPERT</p>
+        </div>
+        <div class="col-6 col-md-3 mt-4 mt-md-0">
+          <h3>7M+</h3>
+          <p>LEADS GENERATED</p>
+        </div>
+        <div class="col-6 col-md-3 mt-4 mt-md-0">
+          <h3>6B+</h3>
+          <p>REVENUE DRIVEN</p>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- potential digital marketing -->
-    <div class="main-section-potential">
-      <div class="container text-center">
-        <div class="header-section">
-          <h2 class="heading">Unleashing the Potential of Digital Marketing</h2>
+  <!-- Testimonial -->
+
+  <section class="testimonial-section">
+    <div class="container text-center">
+      <h6 class="text-primary fw-bold mb-2">TESTIMONIAL</h6>
+      <h2 class="fw-bold mb-4 testimonial-paragraph">
+        Clients Feedback & Review
+      </h2>
+
+      <!-- Carousel -->
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row justify-content-center g-4">
+              <!-- Card 1 -->
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="testimonial-card p-4">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="./Assets/Images/Ellipse 14.png" alt="Jane Cooper" class="testimonial-img me-3" />
+                    <div>
+                      <h6 class="fw-bold mb-0">Jane Cooper</h6>
+                      <p class="text-muted mb-0 small">Georgia</p>
+                    </div>
+                  </div>
+                  <p class="small mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <div class="text-warning">★★★★★</div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="testimonial-card p-4">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="./Assets/Images/Ellipse 20.png" alt="Esther Howard" class="testimonial-img me-3" />
+                    <div>
+                      <h6 class="fw-bold mb-0">Esther Howard</h6>
+                      <p class="text-muted mb-0 small">Brazil</p>
+                    </div>
+                  </div>
+                  <p class="small mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <div class="text-warning">★★★★★</div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="testimonial-card p-4">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="./Assets/Images/Ellipse 16.png" alt="Jacob Jones" class="testimonial-img me-3" />
+                    <div>
+                      <h6 class="fw-bold mb-0">Jacob Jones</h6>
+                      <p class="text-muted mb-0 small">Israel</p>
+                    </div>
+                  </div>
+                  <p class="small mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <div class="text-warning">★★★★★</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Duplicate slides for carousel looping -->
+          <div class="carousel-item">
+            <div class="row justify-content-center g-4">
+              <!-- Card 1 -->
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="testimonial-card p-4">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="./images/Ellipse 14.png" alt="Jane Cooper" class="testimonial-img me-3" />
+                    <div>
+                      <h6 class="fw-bold mb-0">Jane Cooper</h6>
+                      <p class="text-muted mb-0 small">Georgia</p>
+                    </div>
+                  </div>
+                  <p class="small mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <div class="text-warning">★★★★★</div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="testimonial-card p-4">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="./images/Ellipse 20.png" alt="Esther Howard" class="testimonial-img me-3" />
+                    <div>
+                      <h6 class="fw-bold mb-0">Esther Howard</h6>
+                      <p class="text-muted mb-0 small">Brazil</p>
+                    </div>
+                  </div>
+                  <p class="small mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <div class="text-warning">★★★★★</div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="testimonial-card p-4">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="./images/Ellipse 16.png" alt="Jacob Jones" class="testimonial-img me-3" />
+                    <div>
+                      <h6 class="fw-bold mb-0">Jacob Jones</h6>
+                      <p class="text-muted mb-0 small">Israel</p>
+                    </div>
+                  </div>
+                  <p class="small mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <div class="text-warning">★★★★★</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="container my-5">
-          <div class="row g-4">
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="custom-card-potential">
-                <img
-                  src="./Assets/Images/social-media 1.png"
-                  alt="SEO Icon"
-                  class="card-icon-potential"
-                />
-                <h5>Discovery</h5>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-            </div>
+        <!-- Dots -->
+        <div class="carousel-indicators mt-4">
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="custom-card-potential">
-                <img
-                  src="./Assets/Images/paid-content 1.png"
-                  alt="Paid Media Icon"
-                  class="card-icon-potential"
-                />
-                <h5>Strategies</h5>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-            </div>
+  <!--marketing expert section -->
 
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="custom-card-potential">
-                <img
-                  src="./Assets/Images/seo 1.png"
-                  alt="Social Icon"
-                  class="card-icon-potential"
-                />
-                <h5>Implementation</h5>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
+  <section class="expert-section">
+    <div class="container">
+      <div class="row align-items-center text-white">
+        <!-- Left Content -->
+        <div class="col-lg-6 col-md-12 d-flex align-items-center mb-4 mb-lg-0">
+          <div class="d-flex align-items-center">
+            <div class="me-3">
+              <img src="./Assets/Images/Ellipse 20.png" alt="Expert" class="expert-img" />
             </div>
+            <div>
+              <h5 class="fw-bold mb-2 section-h2">
+                Ready to speak with a marketing expert?
+              </h5>
+              <p class="mb-0 small text-light section-para">
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.
+              </p>
+            </div>
+          </div>
+        </div>
 
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="custom-card-potential">
-                <img
-                  src="./Assets/Images/seo 1.png"
-                  alt="Social Icon"
-                  class="card-icon-potential"
-                />
-                <h5>Analysis & Optimization</h5>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
+        <!-- Right Content -->
+        <div class="col-lg-6 col-md-12">
+          <h6 class="fw-normal mb-3 right-heading">
+            Sign up our newsletter to get update information, news, insight or
+            promotions
+          </h6>
+          <form class="d-flex flex-wrap gap-4">
+            <input type="text" class="form-control bg-light border-0 rounded-0" style="width: 180px"
+              placeholder="NAME" />
+            <input type="email" class="form-control bg-light border-0 rounded-0" style="width: 180px"
+              placeholder="EMAIL" />
+
+            <button type="submit" class="btn btn-primary rounded-0 px-4">
+              SIGN UP
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+
+  <footer class="footer py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Logo Section (4 columns) -->
+        <div class="col-lg-4 col-md-12 mb-4 text-center text-lg-start">
+          <img src="./Assets/Images/Adret-Software.png" alt="Adret Logo" class="mb-3" style="max-width: 150px" />
+          <p class="footer-paragraph">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry’s standard dummy text.
+          </p>
+
+          <div class="social-icons mt-3 d-flex justify-content-center justify-content-lg-start gap-3">
+            <a href="#"><img src="./Assets/Images/instagram-brands-solid-full.svg" alt="" /></a>
+            <a href="#"><img src="./Assets/Images/facebook-brands-solid-full.svg" alt="" /></a>
+            <a href="#"><img src="./Assets/Images/twitter-brands-solid-full.svg" alt="" /></a>
+            <a href="#"><img src="./Assets/Images/linkedin-brands-solid-full.svg" alt="" /></a>
+          </div>
+
+          <!-- Social Icons Below Paragraph -->
+        </div>
+
+        <!-- Links Section (8 columns divided into 3) -->
+        <div class="col-lg-8 col-md-12">
+          <div class="row">
+            <div class="col-md-5 col-12 mb-4 mb-md-0">
+              <h5>Services</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-black">Website Design</a></li>
+                <li>
+                  <a href="#" class="text-black">Web Application Development</a>
+                </li>
+                <li>
+                  <a href="#" class="text-black">Android Development</a>
+                </li>
+                <li>
+                  <a href="#" class="text-black">Node JS Development</a>
+                </li>
+                <li>
+                  <a href="#" class="text-black">WordPress Development</a>
+                </li>
+                <li><a href="#" class="text-black">Digital Marketing</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-12 mb-4 mb-md-0">
+              <h5>Support</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-black">Help Center</a></li>
+                <li><a href="#" class="text-black">FAQ</a></li>
+                <li><a href="/contactUs.html" class="text-black">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-12 mb-4 mb-md-0">
+              <h5>Company</h5>
+              <ul class="list-unstyled">
+                <li><a href="/Aboutus.html" class="text-black">About us</a></li>
+                <li><a href="/service.html" class="text-black">Services</a></li>
+                <li><a href="#" class="text-black">Pricing</a></li>
+                <li><a href="#" class="text-black">Careers</a></li>
+                <li>
+                  <a href="#" class="text-black">Terms and Conditions</a>
+                </li>
+                <li><a href="#" class="text-black">Privacy Policy</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </footer>
 
-    <!-- work together   -->
+  <!-- bootstrap javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
 
-    <section class="team-section">
-      <div class="container position-relative">
-        <div class="row align-items-center">
-          <!-- LEFT TEXT -->
-          <div class="col-lg-4 col-md-12 text-white content-area justify-content-lg-start">
-            <h2 class="fw-bold mb-4 text-white">
-              If you can laugh together, you can work together
-            </h2>
-
-            <div class="feature-item d-flex align-items-start mb-4">
-              <div class="icon-circle me-3">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/2830/2830321.png"
-                  alt="Icon 1"
-                />
-              </div>
-              <div>
-                <h5 class="fw-semibold mb-1">Prestigious & Professional</h5>
-                <p class="mb-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-            </div>
-
-            <div class="feature-item d-flex align-items-start">
-              <div class="icon-circle me-3">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/3202/3202926.png"
-                  alt="Icon 2"
-                />
-              </div>
-              <div>
-                <h5 class="fw-semibold mb-1">Support & Knowledge</h5>
-                <p class="mb-0">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- RIGHT IMAGE -->
-          <div class="col-lg-8 col-md-12 image-area text-center">
-            <img
-              src="./Assets/Images/Rectangle 15.png"
-              alt="Team Image"
-              class="img-fluid rounded shadow"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- who we offer  -->
-
-    <section class="services-section py-5">
-      <div class="container text-center">
-        <p class="text-uppercase fw-semibold text-primary mb-2">
-          What We Offer
-        </p>
-        <h2 class="mb-5 offer-h2">Connecting Customers With Your Brand</h2>
-
-        <div class="row g-4">
-          <!-- Card 1 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="service-card p-5">
-              <div class="icon-wrapper mb-4">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/2645/2645897.png"
-                  alt="Digital Marketing"
-                />
-              </div>
-              <h5 class="fw-bold">Digital Marketing</h5>
-              <p class="mb-0 offer-para">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="service-card p-5">
-              <div class="icon-wrapper mb-4">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/646/646094.png"
-                  alt="Email Marketing"
-                />
-              </div>
-              <h5 class="fw-bold">Email Marketing</h5>
-              <p class="mb-0 offer-para">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="service-card p-5">
-              <div class="icon-wrapper mb-4">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/2165/2165004.png"
-                  alt="Social Media"
-                />
-              </div>
-              <h5 class="fw-bold">Social Media Services</h5>
-              <p class="mb-0 offer-para">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="service-card p-5">
-              <div class="icon-wrapper mb-4">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/906/906343.png"
-                  alt="SEO Services"
-                />
-              </div>
-              <h5 class="fw-bold">SEO Services</h5>
-              <p class="mb-0 offer-para">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="service-card p-5">
-              <div class="icon-wrapper mb-4">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/992/992651.png"
-                  alt="PPC Management"
-                />
-              </div>
-              <h5 class="fw-bold">PPC Management</h5>
-              <p class="mb-0 offer-para">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="col-lg-4 col-md-6">
-            <div class="service-card p-5">
-              <div class="icon-wrapper mb-4">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/2645/2645889.png"
-                  alt="Content Marketing"
-                />
-              </div>
-              <h5 class="fw-bold">Content Marketing</h5>
-              <p class="mb-0 offer-para">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- trusted organization -->
-
-    <section class="trusted-section">
-      <div class="container text-center">
-        <div class="heading-div">
-          <h2 class="fw-bold mb-2">
-            Trusted by 25,000+ world-class brands and organization of all sizes
-          </h2>
-        </div>
-
-        <p class="text-muted mb-5">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
-
-        <div class="row g-3">
-          <!-- Repeat for each logo -->
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-1.webp"
-                alt="Logo 1"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-2.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-3.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-4.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-5.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-6.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-7.webp"
-                alt="Logo 1"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-8.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-9.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-10.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-11.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-12.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-13.webp"
-                alt="Logo 1"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-14.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-15.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-16.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-17.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-18.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-19.webp"
-                alt="Logo 1"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-20.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-21.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-22.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-23.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-24.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-25.webp"
-                alt="Logo 1"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-26.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-27.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-28.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-29.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-30.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-31.webp"
-                alt="Logo 1"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-32.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-33.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-34.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-35.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-36.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-37.webp"
-                alt="Logo 1"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-38.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-39.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="brand-box">
-              <img
-                src="./Assets/Images/client-40.webp"
-                alt="Logo 2"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-
-          <!-- Add more logos here -->
-        </div>
-      </div>
-    </section>
-
-    <!-- why choose us  -->
-
-    <section class="why-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-lg-5 col-md-12">
-            <h6 class="text-uppercase mb-3">Why Choose Us</h6>
-            <h2 class="mb-3 text-white">
-              We are here for we always give you satisfaction
-            </h2>
-            <p class="">
-              Tailored solutions for diverse needs, delivering service
-              excellence, innovation, and commitment for your success and
-              satisfaction
-            </p>
-          </div>
-          <div class="col-lg-7 col-md-12">
-            <div class="row gy-4">
-              <div class="col-sm-6">
-                <h6 class="fw-bold">
-                  Leading a Team of 500+ Digital Marketing Expert
-                </h6>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-              <div class="col-sm-6">
-                <h6 class="fw-bold">
-                  Dashboard access for optimizing, measuring, and reporting ROI
-                </h6>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-              <div class="col-sm-6">
-                <h6 class="fw-bold">
-                  In Depth analysis of your business goals, industry and
-                  competitors
-                </h6>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-              <div class="col-sm-6">
-                <h6 class="fw-bold">
-                  24/7 help desk, and direct client phone line
-                </h6>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Stats Section -->
-        <div class="row stats-box text-center">
-          <div class="col-6 col-md-3">
-            <h3>50K+</h3>
-            <p>HAPPY CLIENTS</p>
-          </div>
-          <div class="col-6 col-md-3">
-            <h3>500+</h3>
-            <p>MARKETING EXPERT</p>
-          </div>
-          <div class="col-6 col-md-3 mt-4 mt-md-0">
-            <h3>7M+</h3>
-            <p>LEADS GENERATED</p>
-          </div>
-          <div class="col-6 col-md-3 mt-4 mt-md-0">
-            <h3>6B+</h3>
-            <p>REVENUE DRIVEN</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonial -->
-
-    <section class="testimonial-section">
-      <div class="container text-center">
-        <h6 class="text-primary fw-bold mb-2">TESTIMONIAL</h6>
-        <h2 class="fw-bold mb-4 testimonial-paragraph">
-          Clients Feedback & Review
-        </h2>
-
-        <!-- Carousel -->
-        <div
-          id="testimonialCarousel"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-              <div class="row justify-content-center g-4">
-                <!-- Card 1 -->
-                <div class="col-lg-4 col-md-6 col-12">
-                  <div class="testimonial-card p-4">
-                    <div class="d-flex align-items-center mb-3">
-                      <img
-                        src="./Assets/Images/Ellipse 14.png"
-                        alt="Jane Cooper"
-                        class="testimonial-img me-3"
-                      />
-                      <div>
-                        <h6 class="fw-bold mb-0">Jane Cooper</h6>
-                        <p class="text-muted mb-0 small">Georgia</p>
-                      </div>
-                    </div>
-                    <p class="small mb-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                    <div class="text-warning">★★★★★</div>
-                  </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col-lg-4 col-md-6 col-12">
-                  <div class="testimonial-card p-4">
-                    <div class="d-flex align-items-center mb-3">
-                      <img
-                        src="./Assets/Images/Ellipse 20.png"
-                        alt="Esther Howard"
-                        class="testimonial-img me-3"
-                      />
-                      <div>
-                        <h6 class="fw-bold mb-0">Esther Howard</h6>
-                        <p class="text-muted mb-0 small">Brazil</p>
-                      </div>
-                    </div>
-                    <p class="small mb-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                    <div class="text-warning">★★★★★</div>
-                  </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-lg-4 col-md-6 col-12">
-                  <div class="testimonial-card p-4">
-                    <div class="d-flex align-items-center mb-3">
-                      <img
-                        src="./Assets/Images/Ellipse 16.png"
-                        alt="Jacob Jones"
-                        class="testimonial-img me-3"
-                      />
-                      <div>
-                        <h6 class="fw-bold mb-0">Jacob Jones</h6>
-                        <p class="text-muted mb-0 small">Israel</p>
-                      </div>
-                    </div>
-                    <p class="small mb-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                    <div class="text-warning">★★★★★</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Duplicate slides for carousel looping -->
-            <div class="carousel-item">
-              <div class="row justify-content-center g-4">
-                <!-- Card 1 -->
-                <div class="col-lg-4 col-md-6 col-12">
-                  <div class="testimonial-card p-4">
-                    <div class="d-flex align-items-center mb-3">
-                      <img
-                        src="./images/Ellipse 14.png"
-                        alt="Jane Cooper"
-                        class="testimonial-img me-3"
-                      />
-                      <div>
-                        <h6 class="fw-bold mb-0">Jane Cooper</h6>
-                        <p class="text-muted mb-0 small">Georgia</p>
-                      </div>
-                    </div>
-                    <p class="small mb-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                    <div class="text-warning">★★★★★</div>
-                  </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col-lg-4 col-md-6 col-12">
-                  <div class="testimonial-card p-4">
-                    <div class="d-flex align-items-center mb-3">
-                      <img
-                        src="./images/Ellipse 20.png"
-                        alt="Esther Howard"
-                        class="testimonial-img me-3"
-                      />
-                      <div>
-                        <h6 class="fw-bold mb-0">Esther Howard</h6>
-                        <p class="text-muted mb-0 small">Brazil</p>
-                      </div>
-                    </div>
-                    <p class="small mb-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                    <div class="text-warning">★★★★★</div>
-                  </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-lg-4 col-md-6 col-12">
-                  <div class="testimonial-card p-4">
-                    <div class="d-flex align-items-center mb-3">
-                      <img
-                        src="./images/Ellipse 16.png"
-                        alt="Jacob Jones"
-                        class="testimonial-img me-3"
-                      />
-                      <div>
-                        <h6 class="fw-bold mb-0">Jacob Jones</h6>
-                        <p class="text-muted mb-0 small">Israel</p>
-                      </div>
-                    </div>
-                    <p class="small mb-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                    <div class="text-warning">★★★★★</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Dots -->
-          <div class="carousel-indicators mt-4">
-            <button
-              type="button"
-              data-bs-target="#testimonialCarousel"
-              data-bs-slide-to="0"
-              class="active"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#testimonialCarousel"
-              data-bs-slide-to="1"
-            ></button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--marketing expert section -->
-
-    <section class="expert-section">
-      <div class="container">
-        <div class="row align-items-center text-white">
-          <!-- Left Content -->
-          <div
-            class="col-lg-6 col-md-12 d-flex align-items-center mb-4 mb-lg-0"
-          >
-            <div class="d-flex align-items-center">
-              <div class="me-3">
-                <img
-                  src="./Assets/Images/Ellipse 20.png"
-                  alt="Expert"
-                  class="expert-img"
-                />
-              </div>
-              <div>
-                <h5 class="fw-bold mb-2 section-h2">
-                  Ready to speak with a marketing expert?
-                </h5>
-                <p class="mb-0 small text-light section-para">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Content -->
-          <div class="col-lg-6 col-md-12">
-            <h6 class="fw-normal mb-3 right-heading">
-              Sign up our newsletter to get update information, news, insight or
-              promotions
-            </h6>
-            <form class="d-flex flex-wrap gap-4">
-              <input
-                type="text"
-                class="form-control bg-light border-0 rounded-0"
-                style="width: 180px"
-                placeholder="NAME"
-              />
-              <input
-                type="email"
-                class="form-control bg-light border-0 rounded-0"
-                style="width: 180px"
-                placeholder="EMAIL"
-              />
-
-              <button type="submit" class="btn btn-primary rounded-0 px-4">
-                SIGN UP
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer -->
-
-    <footer class="footer py-5">
-      <div class="container">
-        <div class="row">
-          <!-- Logo Section (4 columns) -->
-          <div class="col-lg-4 col-md-12 mb-4 text-center text-lg-start">
-            <img
-              src="./Assets/Images/Adret-Software.png"
-              alt="Adret Logo"
-              class="mb-3"
-              style="max-width: 150px"
-            />
-            <p class="footer-paragraph">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry’s standard dummy text.
-            </p>
-
-            <div
-              class="social-icons mt-3 d-flex justify-content-center justify-content-lg-start gap-3"
-            >
-              <a href="#"
-                ><img src="./Assets/Images/instagram-brands-solid-full.svg" alt=""
-              /></a>
-              <a href="#"
-                ><img src="./Assets/Images/facebook-brands-solid-full.svg" alt=""
-              /></a>
-              <a href="#"
-                ><img src="./Assets/Images/twitter-brands-solid-full.svg" alt=""
-              /></a>
-              <a href="#"
-                ><img src="./Assets/Images/linkedin-brands-solid-full.svg" alt=""
-              /></a>
-            </div>
-
-            <!-- Social Icons Below Paragraph -->
-          </div>
-
-          <!-- Links Section (8 columns divided into 3) -->
-          <div class="col-lg-8 col-md-12">
-            <div class="row">
-              <div class="col-md-5 col-12 mb-4 mb-md-0">
-                <h5>Services</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="text-black">Website Design</a></li>
-                  <li>
-                    <a href="#" class="text-black"
-                      >Web Application Development</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="text-black">Android Development</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-black">Node JS Development</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-black">WordPress Development</a>
-                  </li>
-                  <li><a href="#" class="text-black">Digital Marketing</a></li>
-                </ul>
-              </div>
-              <div class="col-md-4 col-12 mb-4 mb-md-0">
-                <h5>Support</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="text-black">Help Center</a></li>
-                  <li><a href="#" class="text-black">FAQ</a></li>
-                  <li><a href="#" class="text-black">Contact us</a></li>
-                </ul>
-              </div>
-              <div class="col-md-3 col-12 mb-4 mb-md-0">
-                <h5>Company</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="text-black">About us</a></li>
-                  <li><a href="#" class="text-black">Services</a></li>
-                  <li><a href="#" class="text-black">Pricing</a></li>
-                  <li><a href="#" class="text-black">Careers</a></li>
-                  <li>
-                    <a href="#" class="text-black">Terms and Conditions</a>
-                  </li>
-                  <li><a href="#" class="text-black">Privacy Policy</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- bootstrap javascript -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>

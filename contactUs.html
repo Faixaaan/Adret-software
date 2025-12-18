@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adret Software</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./Assets/Css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Font Awesome CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-xl navbar-light py-1">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Left: Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="/" style="gap: 6px">
+                <img src="./Assets/Images/Adret-Software.png" alt="Adret Logo"
+                    style="height: 55px; object-fit: contain; display: block" />
+            </a>
+
+            <!-- Toggler (Drawer trigger for mobile) -->
+            <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Desktop Navbar -->
+            <div class="collapse navbar-collapse justify-content-end d-none d-xl-flex" id="navbarNavAltMarkup">
+                <div class="navbar-nav align-items-center">
+                    <a class="nav-link " aria-current="page" href="/">Home</a>
+                    <a class="nav-link" href="/Aboutus.html">About us</a>
+                    <a class="nav-link" href="/client.html">Client</a>
+                    <a class="nav-link" href="/hire-us">Hire us</a>
+                    <a class="nav-link " href="/service.html">Services</a>
+                    <a class="nav-link active" href="/contactUs.html">Contact us</a>
+                    <a class="nav-link" href="/pages">Pages</a>
+                    <a class="nav-link" href="/get-started">GET STARTED</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Drawer for Mobile/Tablet -->
+    <div class="offcanvas offcanvas-end d-xl-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="navbar-nav">
+                <a class="nav-link " aria-current="page" href="/">Home</a>
+                <a class="nav-link " href="/Aboutus.html">About us</a>
+                <a class="nav-link" href="/client.html">Client</a>
+                <a class="nav-link" href="/hire-us">Hire us</a>
+                <a class="nav-link " href="/service.html">Services</a>
+                <a class="nav-link active" href="/contactUs.html">Contact us</a>
+                <a class="nav-link" href="/pages">Pages</a>
+                <a class="nav-link" href="/get-started">GET STARTED</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner section -->
+    <div class="service-banner position-relative">
+        <img src="./Assets/Images/contact-banner.png" alt="Banner" class="w-100 d-block service-banner-image" />
+
+        <!-- keep container for alignment -->
+        <div class="container">
+            <div class="banner-content">
+                <h1>Contact us</h1>
+                <p>We would love to hear from you.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- who we are  -->
+
+    <div class="content-section position-relative">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left side (Contact Form) -->
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="contact-form">
+                        <h6 class="text-primary mb-2">Contact us</h6>
+                        <h2 class="mb-3">Leave us a message.</h2>
+                        <p class="text-muted mb-4">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
+
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="Company">
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <input type="tel" class="form-control" placeholder="Phone">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <input type="text" class="form-control" placeholder="Subject">
+                                </div>
+
+                                <div class="col-12 mb-4">
+                                    <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary px-4">
+                                        SEND MESSAGE
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right side (Image) -->
+                <div class="col-lg-6 col-md-12 col-12 text-center">
+                    <img src="./Assets/Images/contactImage.png" alt="Contact" class="img-fluid">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- who we offer  -->
+
+    <section class="contact-section py-6">
+        <div class="container text-center">
+            <p class="text-uppercase fw-semibold text-primary mb-2">
+                GET IN TOUCH
+            </p>
+
+            <h2 class="mb-5 offer-h2">
+                Don’t hesitate to contact us for more information
+            </h2>
+
+            <div class="row g-4 justify-content-center text-start ">
+                <!-- Phone -->
+                <div class="col-lg-4 col-md-6 justify-content-center  d-flex">
+                    <div class="contact-card">
+                        <div class="contact-inner">
+                            <div class="icon-wrapperr">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+
+                            <div class="contact-content">
+                                <h6>Phone / Fax</h6>
+                                <p>
+                                    (+02) 245522455<br>
+                                    (+00) 245522455
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- email -->
+                <div class="col-lg-4 col-md-6 justify-content-center  d-flex">
+                    <div class="contact-card">
+                        <div class="contact-inner">
+                            <div class="icon-wrapperr">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+
+                            <div class="contact-content">
+                                <h6>E-mail</h6>
+                                <p>
+                                    support@turacos.com<br>
+                                    info@turacos.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Location -->
+                <div class="col-lg-4 col-md-6 justify-content-center  d-flex">
+                    <div class="contact-card">
+                        <div class="contact-inner">
+                            <div class="icon-wrapperr">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+
+                            <div class="contact-content">
+                                <h6>Location</h6>
+                                <p>
+                                    2750 Quadra Street, Park<br>
+                                    Area, Victoria, Canada.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Map -->
+
+    <div class="">
+        <div class="">
+            <div class="row align-items-center">
+                <!-- Left side (Contact Form) -->
+                <div class="col-lg-12 col-md-12 col-12">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.06023303294!2d88.4314905752356!3d22.57685043281475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275d4a8ddf9b1%3A0x4bc94cd6dea31b29!2sAdret%20Software%20Services%20Private%20Limited!5e0!3m2!1sen!2sin!4v1766035160832!5m2!1sen!2sin"
+                        width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+     <!--marketing expert section -->
+
+    <section class="expert-section">
+      <div class="container">
+        <div class="row align-items-center text-white">
+          <!-- Left Content -->
+          <div
+            class="col-lg-6 col-md-12 d-flex align-items-center mb-4 mb-lg-0"
+          >
+            <div class="d-flex align-items-center">
+              <div class="me-3">
+                <img
+                  src="./Assets/Images/Ellipse 20.png"
+                  alt="Expert"
+                  class="expert-img"
+                />
+              </div>
+              <div>
+                <h5 class="fw-bold mb-2 section-h2">
+                  Ready to speak with a marketing expert?
+                </h5>
+                <p class="mb-0 small text-light section-para">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="col-lg-6 col-md-12">
+            <h6 class="fw-normal mb-3 right-heading">
+              Sign up our newsletter to get update information, news, insight or
+              promotions
+            </h6>
+            <form class="d-flex flex-wrap gap-4">
+              <input
+                type="text"
+                class="form-control bg-light border-0 rounded-0"
+                style="width: 180px"
+                placeholder="NAME"
+              />
+              <input
+                type="email"
+                class="form-control bg-light border-0 rounded-0"
+                style="width: 180px"
+                placeholder="EMAIL"
+              />
+
+              <button type="submit" class="btn btn-primary rounded-0 px-4">
+                SIGN UP
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- footer -->
+
+    <footer class="footer ">
+        <div class="container">
+            <div class="row">
+                <!-- Logo Section (4 columns) -->
+                <div class="col-lg-4 col-md-12 mb-4 text-center text-lg-start">
+                    <img src="./Assets/Images/Adret-Software.png" alt="Adret Logo" class="mb-3"
+                        style="max-width: 150px" />
+                    <p class="footer-paragraph">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry’s standard dummy text.
+                    </p>
+
+                    <div class="social-icons mt-3 d-flex justify-content-center justify-content-lg-start gap-3">
+                        <a href="#"><img src="./Assets/Images/instagram-brands-solid-full.svg" alt="" /></a>
+                        <a href="#"><img src="./Assets/Images/facebook-brands-solid-full.svg" alt="" /></a>
+                        <a href="#"><img src="./Assets/Images/twitter-brands-solid-full.svg" alt="" /></a>
+                        <a href="#"><img src="./Assets/Images/linkedin-brands-solid-full.svg" alt="" /></a>
+                    </div>
+
+                    <!-- Social Icons Below Paragraph -->
+                </div>
+
+                <!-- Links Section (8 columns divided into 3) -->
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <div class="col-md-5 col-12 mb-4 mb-md-0">
+                            <h5>Services</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-black">Website Design</a></li>
+                                <li>
+                                    <a href="#" class="text-black">Web Application Development</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-black">Android Development</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-black">Node JS Development</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-black">WordPress Development</a>
+                                </li>
+                                <li><a href="#" class="text-black">Digital Marketing</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-12 mb-4 mb-md-0">
+                            <h5>Support</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-black">Help Center</a></li>
+                                <li><a href="#" class="text-black">FAQ</a></li>
+                                <li><a href="#" class="text-black">Contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-12 mb-4 mb-md-0">
+                            <h5>Company</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-black">About us</a></li>
+                                <li><a href="#" class="text-black">Services</a></li>
+                                <li><a href="#" class="text-black">Pricing</a></li>
+                                <li><a href="#" class="text-black">Careers</a></li>
+                                <li>
+                                    <a href="#" class="text-black">Terms and Conditions</a>
+                                </li>
+                                <li><a href="#" class="text-black">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

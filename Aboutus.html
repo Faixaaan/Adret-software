@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adret Software</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./Assets/Css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Font Awesome CDN -->
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-xl navbar-light py-1">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Left: Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="/" style="gap: 6px">
+                <img src="./Assets/Images/Adret-Software.png" alt="Adret Logo"
+                    style="height: 55px; object-fit: contain; display: block" />
+            </a>
+
+            <!-- Toggler (Drawer trigger for mobile) -->
+            <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Desktop Navbar -->
+            <div class="collapse navbar-collapse justify-content-end d-none d-xl-flex" id="navbarNavAltMarkup">
+                <div class="navbar-nav align-items-center">
+                    <a class="nav-link " aria-current="page" href="/">Home</a>
+                    <a class="nav-link active" href="/Aboutus.html">About us</a>
+                    <a class="nav-link" href="/client.html">Client</a>
+                    <a class="nav-link" href="/hire-us">Hire us</a>
+                    <a class="nav-link " href="/service.html">Services</a>
+                    <a class="nav-link" href="/contactUs.html">Contact us</a>
+                    <a class="nav-link" href="/pages">Pages</a>
+                    <a class="nav-link" href="/get-started">GET STARTED</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Drawer for Mobile/Tablet -->
+    <div class="offcanvas offcanvas-end d-xl-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="navbar-nav">
+                <a class="nav-link " aria-current="page" href="/">Home</a>
+                <a class="nav-link active " href="/about-us">About us</a>
+                <a class="nav-link" href="/client.html">Client</a>
+                 <a class="nav-link" href="/hire-us">Client Hire us</a>
+                <a class="nav-link " href="/service.html">Services</a>
+                <a class="nav-link" href="/contact-us">Contact us</a>
+                <a class="nav-link" href="/pages">Pages</a>
+                <a class="nav-link" href="/get-started">GET STARTED</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner section -->
+    <div class="about-banner position-relative">
+        <img src="./Assets/Images/about banner.png" alt="Banner" class="w-100 d-block service-banner-image" />
+
+        <!-- keep container for alignment -->
+        <div class="container">
+            <div class="banner-content">
+                <h1>About us</h1>
+                <p>Providing brilliant ideas for
+                    your business.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Best Digital   -->
+
+    <section class="creative-agency-section py-5">
+        <div class="container">
+            <div class="row align-items-start">
+
+                <!-- LEFT : Image Grid -->
+                <div class="col-lg-7 col-md-12 mb-4 mb-lg-0">
+                    <div class="image-grid">
+                        <div class="grid-item">
+                            <img src="./Assets/Images/about-01.png" alt="">
+                        </div>
+                        <div class="grid-item">
+                            <img src="./Assets/Images/about-02.png" alt="">
+                        </div>
+                        <div class="grid-item">
+                            <img src="./Assets/Images/about-03.png" alt="">
+                        </div>
+                        <div class="grid-item">
+                            <img src="./Assets/Images/about-04.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT : Content -->
+                <div class="col-lg-5 col-md-12  ">
+                    <p class="text-primary fw-semibold text-uppercase mb-2">
+                        Best Digital Agency In The World
+                    </p>
+
+                    <h2 class="agency-title mb-3">
+                        Leading the way in<br>Creative Digital Agency
+                    </h2>
+
+                    <p class="agency-text">
+                        We provide marketing services to startups and small businesses
+                        looking for a partner of their digital media, design &
+                        development, lead generation and communications requirements
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Power-plan -->
+
+    <section class="creative-agency-section py-4">
+        <div class="container">
+            <div class="row align-items-start">
+
+                <!-- LEFT : Image Grid -->
+                <div class="col-lg-7 col-md-12  ">
+                    <p class="power-plan-title mb-2">
+                        Get Best Plans For More <br class="power"> Power
+                    </p>
+
+                    <h2 class="power-title mb-3">
+                        We work systematically to integrate corporate responsibility in our core business and make our
+                        expertise available for the benefit of the societies where we operate.
+                    </h2>
+
+                    <ul class="">
+                        <li>We've been supporting WordPress since the beginning.</li>
+                        <li>Perfect for large sites or agencies managing multiple clients.</li>
+                        <li>Our easy-to-use control panel and API let you spend.</li>
+                    </ul>
+                    <div class="power-button-div">
+                        <button class="btn btn-primary mt-4 power-button">GET STARTED ></button>
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT : Content -->
+                <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+
+                    <div class="grid-item">
+                        <img src="./Assets/Images/power-plan.png" alt="">
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- who we offer  -->
+
+    <section class="contact-section py-5">
+        <div class="container text-center">
+            <p class="text-uppercase fw-semibold text-primary mb-2">
+                Our Best Services
+            </p>
+            <h2 class="mb-0 offer-h2">We’r Provided Best Digital Marketing Services!</h2>
+            <p class=" mt-2 adapting-text">
+                We enjoy adapting our strategies to offer every client the
+                best solutions that are at the forefront of the industry.
+            </p>
+
+            <div class="row g-4 mt-4">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicee-card p-5">
+                        <div class="icon-wrapper mb-4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2645/2645897.png"
+                                alt="Digital Marketing" />
+                        </div>
+                        <h5 class="fw-bold">Digital Marketing</h5>
+                        <p class="mb-0 offer-para">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicee-card p-5">
+                        <div class="icon-wrapper mb-4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/646/646094.png" alt="Email Marketing" />
+                        </div>
+                        <h5 class="fw-bold">Email Marketing</h5>
+                        <p class="mb-0 offer-para">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicee-card p-5">
+                        <div class="icon-wrapper mb-4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2165/2165004.png" alt="Social Media" />
+                        </div>
+                        <h5 class="fw-bold">Social Media Services</h5>
+                        <p class="mb-0 offer-para">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicee-card p-5">
+                        <div class="icon-wrapper mb-4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/906/906343.png" alt="SEO Services" />
+                        </div>
+                        <h5 class="fw-bold">SEO Services</h5>
+                        <p class="mb-0 offer-para">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicee-card p-5">
+                        <div class="icon-wrapper mb-4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="PPC Management" />
+                        </div>
+                        <h5 class="fw-bold">PPC Management</h5>
+                        <p class="mb-0 offer-para">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="servicee-card p-5">
+                        <div class="icon-wrapper mb-4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2645/2645889.png"
+                                alt="Content Marketing" />
+                        </div>
+                        <h5 class="fw-bold">Content Marketing</h5>
+                        <p class="mb-0 offer-para">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards -->
+
+    <section class="award-section">
+        <div class="container">
+            <div class="row g-4 mt-4">
+                <!-- Card 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="award-card p-5">
+
+                        <h5 class="fw-bold award-title">2K+</h5>
+                        <p class="mb-0 award-content">
+                            ACTIVE CLIENTS
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="award-card p-5">
+
+                        <h5 class="fw-bold award-title">86%</h5>
+                        <p class="mb-0 award-content">
+                            SUCCESS RATE
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="award-card p-5">
+
+                        <h5 class="fw-bold award-title">505+</h5>
+                        <p class="mb-0 award-content">
+                            PROJECTS DONE
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="award-card p-5">
+
+                        <h5 class="fw-bold award-title">35+</h5>
+                        <p class="mb-0 award-content">
+                            AWARDS
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Testimonial -->
+
+    <section class="testimonial-section">
+        <div class="container text-center">
+            <h6 class="text-primary fw-bold mb-2">TESTIMONIAL</h6>
+            <h2 class="fw-bold mb-4 testimonial-paragraph">
+                Clients Feedback & Review
+            </h2>
+
+            <!-- Carousel -->
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center g-4">
+                            <!-- Card 1 -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="testimonial-card p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="./Assets/Images/Ellipse 14.png" alt="Jane Cooper"
+                                            class="testimonial-img me-3" />
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Jane Cooper</h6>
+                                            <p class="text-muted mb-0 small">Georgia</p>
+                                        </div>
+                                    </div>
+                                    <p class="small mb-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                    <div class="text-warning">★★★★★</div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="testimonial-card p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="./Assets/Images/Ellipse 20.png" alt="Esther Howard"
+                                            class="testimonial-img me-3" />
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Esther Howard</h6>
+                                            <p class="text-muted mb-0 small">Brazil</p>
+                                        </div>
+                                    </div>
+                                    <p class="small mb-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                    <div class="text-warning">★★★★★</div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="testimonial-card p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="./Assets/Images/Ellipse 16.png" alt="Jacob Jones"
+                                            class="testimonial-img me-3" />
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Jacob Jones</h6>
+                                            <p class="text-muted mb-0 small">Israel</p>
+                                        </div>
+                                    </div>
+                                    <p class="small mb-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                    <div class="text-warning">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate slides for carousel looping -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center g-4">
+                            <!-- Card 1 -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="testimonial-card p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="./Assets/Images/Ellipse 14.png" alt="Jane Cooper"
+                                            class="testimonial-img me-3" />
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Jane Cooper</h6>
+                                            <p class="text-muted mb-0 small">Georgia</p>
+                                        </div>
+                                    </div>
+                                    <p class="small mb-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                    <div class="text-warning">★★★★★</div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="testimonial-card p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="./Assets/Images/Ellipse 20.png" alt="Esther Howard"
+                                            class="testimonial-img me-3" />
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Esther Howard</h6>
+                                            <p class="text-muted mb-0 small">Brazil</p>
+                                        </div>
+                                    </div>
+                                    <p class="small mb-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                    <div class="text-warning">★★★★★</div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="testimonial-card p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="./Assets/Images/Ellipse 16.png" alt="Jacob Jones"
+                                            class="testimonial-img me-3" />
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Jacob Jones</h6>
+                                            <p class="text-muted mb-0 small">Israel</p>
+                                        </div>
+                                    </div>
+                                    <p class="small mb-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                    <div class="text-warning">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dots -->
+                <div class="carousel-indicators mt-4">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- pricing Table -->
+
+    <section class="pricing-table py-5">
+        <div class="container">
+            <!-- Heading -->
+            <div class="text-center mb-5">
+                <p class="text-uppercase text-primary fw-semibold mb-2">
+                    Pricing Table
+                </p>
+                <h2 class="fw-bold mb-3">
+                    Not Any Hidden Charges, Choose<br>
+                    Your Plan
+                </h2>
+                <p class="text-muted mx-auto pricing-desc">
+                    We enjoy adapting our strategies to offer every client the best
+                    solutions that are at the forefront of the industry.
+                </p>
+            </div>
+
+            <!-- Toggle -->
+            <div class="pricing-toggle mb-5">
+                <button class="toggle-btn active" data-plan="monthly">MONTHLY</button>
+                <button class="toggle-btn" data-plan="yearly">YEARLY</button>
+            </div>
+
+            <!-- Cards -->
+            <div class="row g-4 justify-content-center align-items-center">
+                <!-- PRO -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4>PRO</h4>
+                            <h3>
+                                $<span class="price" data-monthly="99" data-yearly="899">99</span>
+                                <span>/PER</span>
+                            </h3>
+                        </div>
+                        <ul>
+                            <li>Management & Marketing</li>
+                            <li>SEO Optimization</li>
+                            <li>25 Analytics Campaign</li>
+                            <li>1,300 Change Keywords</li>
+                            <li>25 Social Media Reviews</li>
+                            <li>1 Free Optimization</li>
+                            <li>24/7 Support</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">BUY NOW</a>
+                    </div>
+                </div>
+
+                <!-- ULTRA -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="pricing-card active">
+                        <div class="pricing-header">
+                            <h4>ULTRA</h4>
+                            <h3>
+                                $<span class="price" data-monthly="79" data-yearly="699">79</span>
+                                <span>/PER</span>
+                            </h3>
+                        </div>
+                        <ul>
+                            <li>Management & Marketing</li>
+                            <li>SEO Optimization</li>
+                            <li>20 Analytics Campaign</li>
+                            <li>1,000 Change Keywords</li>
+                            <li>25 Social Media Reviews</li>
+                            <li>1 Free Optimization</li>
+                            <li>24/7 Support</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">BUY NOW</a>
+                    </div>
+                </div>
+
+                <!-- BASIC -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4>BASIC</h4>
+                            <h3>
+                                $<span class="price" data-monthly="50" data-yearly="499">50</span>
+                                <span>/PER</span>
+                            </h3>
+                        </div>
+                        <ul>
+                            <li>Management & Marketing</li>
+                            <li>SEO Optimization</li>
+                            <li>15 Analytics Campaign</li>
+                            <li>500 Change Keywords</li>
+                            <li>25 Social Media Reviews</li>
+                            <li>1 Free Optimization</li>
+                            <li>24/7 Support</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--marketing expert section -->
+
+    <section class="expert-section">
+        <div class="container">
+            <div class="row align-items-center text-white">
+                <!-- Left Content -->
+                <div class="col-lg-6 col-md-12 d-flex align-items-center mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <img src="./Assets/Images/Ellipse 20.png" alt="Expert" class="expert-img" />
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-2 section-h2">
+                                Ready to speak with a marketing expert?
+                            </h5>
+                            <p class="mb-0 small text-light section-para">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="col-lg-6 col-md-12">
+                    <h6 class="fw-normal mb-3 right-heading">
+                        Sign up our newsletter to get update information, news, insight or
+                        promotions
+                    </h6>
+                    <form class="d-flex flex-wrap gap-4">
+                        <input type="text" class="form-control bg-light border-0 rounded-0" style="width: 180px"
+                            placeholder="NAME" />
+                        <input type="email" class="form-control bg-light border-0 rounded-0" style="width: 180px"
+                            placeholder="EMAIL" />
+
+                        <button type="submit" class="btn btn-primary rounded-0 px-4">
+                            SIGN UP
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer ">
+        <div class="container">
+            <div class="row">
+                <!-- Logo Section (4 columns) -->
+                <div class="col-lg-4 col-md-12 mb-4 text-center text-lg-start">
+                    <img src="./Assets/Images/Adret-Software.png" alt="Adret Logo" class="mb-3"
+                        style="max-width: 150px" />
+                    <p class="footer-paragraph">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry’s standard dummy text.
+                    </p>
+
+                    <div class="social-icons mt-3 d-flex justify-content-center justify-content-lg-start gap-3">
+                        <a href="#"><img src="./Assets/Images/instagram-brands-solid-full.svg" alt="" /></a>
+                        <a href="#"><img src="./Assets/Images/facebook-brands-solid-full.svg" alt="" /></a>
+                        <a href="#"><img src="./Assets/Images/twitter-brands-solid-full.svg" alt="" /></a>
+                        <a href="#"><img src="./Assets/Images/linkedin-brands-solid-full.svg" alt="" /></a>
+                    </div>
+
+                    <!-- Social Icons Below Paragraph -->
+                </div>
+
+                <!-- Links Section (8 columns divided into 3) -->
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <div class="col-md-5 col-12 mb-4 mb-md-0">
+                            <h5>Services</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-black">Website Design</a></li>
+                                <li>
+                                    <a href="#" class="text-black">Web Application Development</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-black">Android Development</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-black">Node JS Development</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-black">WordPress Development</a>
+                                </li>
+                                <li><a href="#" class="text-black">Digital Marketing</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-12 mb-4 mb-md-0">
+                            <h5>Support</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-black">Help Center</a></li>
+                                <li><a href="#" class="text-black">FAQ</a></li>
+                                <li><a href="#" class="text-black">Contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-12 mb-4 mb-md-0">
+                            <h5>Company</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-black">About us</a></li>
+                                <li><a href="#" class="text-black">Services</a></li>
+                                <li><a href="#" class="text-black">Pricing</a></li>
+                                <li><a href="#" class="text-black">Careers</a></li>
+                                <li>
+                                    <a href="#" class="text-black">Terms and Conditions</a>
+                                </li>
+                                <li><a href="#" class="text-black">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        const toggleButtons = document.querySelectorAll(".toggle-btn");
+        const prices = document.querySelectorAll(".price");
+
+        toggleButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                toggleButtons.forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
+
+                const plan = button.dataset.plan;
+
+                prices.forEach(price => {
+                    price.textContent =
+                        plan === "monthly"
+                            ? price.dataset.monthly
+                            : price.dataset.yearly;
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

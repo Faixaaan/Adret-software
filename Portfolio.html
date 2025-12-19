@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adret Software</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./Assets/Css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Font Awesome CDN -->
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-xl navbar-light py-1">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Left: Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="/" style="gap: 6px">
+                <img src="./Assets/Images/Adret-Software.png" alt="Adret Logo"
+                    style="height: 55px; object-fit: contain; display: block" />
+            </a>
+
+            <!-- Toggler (Drawer trigger for mobile) -->
+            <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Desktop Navbar -->
+            <div class="collapse navbar-collapse justify-content-end d-none d-xl-flex" id="navbarNavAltMarkup">
+                <div class="navbar-nav align-items-center">
+                    <a class="nav-link " aria-current="page" href="/">Home</a>
+                    <a class="nav-link" href="/Aboutus.html">About us</a>
+                    <a class="nav-link active" href="/client.html">Client</a>
+                    <a class="nav-link" href="/hire-us">Hire us</a>
+                    <a class="nav-link" href="/service.html">Services</a>
+                    <a class="nav-link" href="/contactUs.html">Contact us</a>
+                    <a class="nav-link" href="/pages">Pages</a>
+                    <a class="nav-link" href="/get-started">GET STARTED</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Drawer for Mobile/Tablet -->
+    <div class="offcanvas offcanvas-end d-xl-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="navbar-nav">
+                <a class="nav-link " aria-current="page" href="/">Home</a>
+                <a class="nav-link" href="/Aboutus.html">About us</a>
+                <a class="nav-link active" href="/client.html">Client</a>
+                <a class="nav-link" href="/hire-us">Hire us</a>
+                <a class="nav-link" href="/service.html">Services</a>
+                <a class="nav-link" href="/contactUs.html">Contact us</a>
+                <a class="nav-link" href="/pages">Pages</a>
+                <a class="nav-link" href="/get-started">GET STARTED</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner section -->
+    <div class="service-banner position-relative">
+        <img src="./Assets/Images/client-banner.jpg" alt="Banner" class="w-100 d-block service-banner-image" />
+
+        <!-- keep container for alignment -->
+        <div class="container">
+            <div class="banner-content">
+                <h1>Portfolio</h1>
+                <p>Providing brilliant ideas for
+                    your business.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- who we are  -->
+
+    <section class="quote-section py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- LEFT CONTENT -->
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <div class="quote-left">
+                        <h6 class="text-uppercase text-primary mb-3">Get Digital Services</h6>
+
+                        <h2 class="fw-bold mb-3">
+                            #1 Digital Marketing Company <br> In Salt Lake
+                        </h2>
+
+                        <p class="mb-4 text-muted">Digital Services Provided By Us -</p>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li>Software</li>
+                                    <li>Graphic Design</li>
+                                    <li>Ecommerce Development</li>
+                                    <li>Game Development</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li>Website Design & Development</li>
+                                    <li>UI / UX Design</li>
+                                    <li>Mobile App Development</li>
+                                    <li>Digital Marketing</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <p class="mt-4 fw-semibold">
+                            Adret Software is Official GOOGLE PARTNER Company in United States
+                        </p>
+                    </div>
+                </div>
+
+                <!-- RIGHT FORM -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="quote-form p-4 p-md-5">
+                        <h4 class="text-center mb-4">Get A Quote</h4>
+
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Enter your Name">
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Enter your E-mail id">
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" placeholder="Enter your Phone Number">
+                            </div>
+
+                            <div class="mb-3">
+                                <select class="form-select">
+                                    <option>-- Select Category --</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <select class="form-select">
+                                    <option>-- Select Country --</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Enter your Business Name">
+                            </div>
+
+                            <div class="mb-4">
+                                <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                            </div>
+
+                            <button class="btn btn-primary w-100 mb-3">SUBMIT NOW</button>
+                            <button class="btn btn-outline-primary w-100">CALL US</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- review part -->
+
+    <section class="Showcase-section py-5">
+        <div class="container">
+
+            <!-- Tabs -->
+            <ul class="nav nav-tabs justify-content-center custom-tabs" id="portfolioTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#website" type="button">
+                        Website
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#mobile" type="button">
+                        Mobile Apps
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#logo" type="button">
+                        Logo
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#brochure" type="button">
+                        Brochure
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#video" type="button">
+                        Explainer Videos
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Heading -->
+            <h2 class="text-center  my-4 robust-heading">
+                Robust, functional & cost-effective services for your business
+            </h2>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+                <!-- Website -->
+                <div class="tab-pane fade show active" id="website">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-1.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-10.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-11.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-12.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-13.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-14.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-13.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-14.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-15.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-2.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-4.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-3.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-5.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-6.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-8.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Apps -->
+                <div class="tab-pane fade" id="mobile">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-1.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-10.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-11.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-12.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-13.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-14.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logo -->
+                <div class="tab-pane fade" id="logo">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-1.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-10.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-11.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-12.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-13.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/portfolio-14.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brochure -->
+                <div class="tab-pane fade" id="brochure">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/brochure-1.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/brochure-2.webp" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/brochure-3.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/brochure-4.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <img src="./Assets/Images/brochure-5.jpg" class="img-fluid" alt="">
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Video -->
+                <div class="tab-pane fade" id="video">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <video src="./Assets/Images/movie.mp4" autoplay muted loop playsinline></video>
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="portfolio-card">
+                                <video src="./Assets/Images/movie.mp4" autoplay muted loop playsinline></video>
+                                <div class="portfolio-btn">
+                                    <button class="btn text-white">View</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Testimonial -->
+
+    <section class="testimoniall-section">
+        <div class="container text-center">
+            <h6 class="text-primary fw-bold mb-2">TESTIMONIAL</h6>
+            <h2 class="fw-bold mb-4 testimonial-paragraph">
+                Clients Feedback & Review
+            </h2>
+
+            <!-- Carousel -->
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center g-4">
+                            <!-- Card 1 -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="testimonial-card p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="./Assets/Images/Ellipse 14.png" alt="Jane Cooper"
+                                            class="testimonial-img me-3" />
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Jane Cooper</h6>
+                                            <p class="text-muted mb-0 small">Georgia</p>
+                                        </div>
+                                    </div>
+                                    <p class="small mb-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                    <div class="text-warning">★★★★★</div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="testimonial-card p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="./Assets/Images/Ellipse 20.png" alt="Esther Howard"
+                                            class="testimonial-img me-3" />
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Esther Howard</h6>
+                                            <p class="text-muted mb-0 small">Brazil</p>
+                                        </div>
+                                    </div>
+                                    <p class="small mb-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                    <div class="text-warning">★★★★★</div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="testimonial-card p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="./Assets/Images/Ellipse 16.png" alt="Jacob Jones"
+                                            class="testimonial-img me-3" />
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Jacob Jones</h6>
+                                            <p class="text-muted mb-0 small">Israel</p>
+                                        </div>
+                                    </div>
+                                    <p class="small mb-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                    <div class="text-warning">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate slides for carousel looping -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center g-4">
+                            <!-- Card 1 -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="testimonial-card p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="./Assets/Images/Ellipse 14.png" alt="Jane Cooper"
+                                            class="testimonial-img me-3" />
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Jane Cooper</h6>
+                                            <p class="text-muted mb-0 small">Georgia</p>
+                                        </div>
+                                    </div>
+                                    <p class="small mb-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                    <div class="text-warning">★★★★★</div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="testimonial-card p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="./Assets/Images/Ellipse 20.png" alt="Esther Howard"
+                                            class="testimonial-img me-3" />
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Esther Howard</h6>
+                                            <p class="text-muted mb-0 small">Brazil</p>
+                                        </div>
+                                    </div>
+                                    <p class="small mb-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                    <div class="text-warning">★★★★★</div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="testimonial-card p-4">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img src="./Assets/Images/Ellipse 16.png" alt="Jacob Jones"
+                                            class="testimonial-img me-3" />
+                                        <div>
+                                            <h6 class="fw-bold mb-0">Jacob Jones</h6>
+                                            <p class="text-muted mb-0 small">Israel</p>
+                                        </div>
+                                    </div>
+                                    <p class="small mb-3">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua.
+                                    </p>
+                                    <div class="text-warning">★★★★★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dots -->
+                <div class="carousel-indicators mt-4">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--marketing expert section -->
+
+    <section class="expert-section">
+        <div class="container">
+            <div class="row align-items-center text-white">
+                <!-- Left Content -->
+                <div class="col-lg-6 col-md-12 d-flex align-items-center mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <img src="./Assets/Images/Ellipse 20.png" alt="Expert" class="expert-img" />
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-2 section-h2">
+                                Ready to speak with a marketing expert?
+                            </h5>
+                            <p class="mb-0 small text-light section-para">
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="col-lg-6 col-md-12">
+                    <h6 class="fw-normal mb-3 right-heading">
+                        Sign up our newsletter to get update information, news, insight or
+                        promotions
+                    </h6>
+                    <form class="d-flex flex-wrap gap-4">
+                        <input type="text" class="form-control bg-light border-0 rounded-0" style="width: 180px"
+                            placeholder="NAME" />
+                        <input type="email" class="form-control bg-light border-0 rounded-0" style="width: 180px"
+                            placeholder="EMAIL" />
+
+                        <button type="submit" class="btn btn-primary rounded-0 px-4">
+                            SIGN UP
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo Section (4 columns) -->
+                <div class="col-lg-4 col-md-12 mb-4 text-center text-lg-start">
+                    <img src="./Assets/Images/Adret-Software.png" alt="Adret Logo" class="mb-3"
+                        style="max-width: 150px" />
+                    <p class="footer-paragraph">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry’s standard dummy text.
+                    </p>
+
+                    <div class="social-icons mt-3 d-flex justify-content-center justify-content-lg-start gap-3">
+                        <a href="#"><img src="./Assets/Images/instagram-brands-solid-full.svg" alt="" /></a>
+                        <a href="#"><img src="./Assets/Images/facebook-brands-solid-full.svg" alt="" /></a>
+                        <a href="#"><img src="./Assets/Images/twitter-brands-solid-full.svg" alt="" /></a>
+                        <a href="#"><img src="./Assets/Images/linkedin-brands-solid-full.svg" alt="" /></a>
+                    </div>
+
+                    <!-- Social Icons Below Paragraph -->
+                </div>
+
+                <!-- Links Section (8 columns divided into 3) -->
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <div class="col-md-5 col-12 mb-4 mb-md-0">
+                            <h5>Services</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-black">Website Design</a></li>
+                                <li>
+                                    <a href="#" class="text-black">Web Application Development</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-black">Android Development</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-black">Node JS Development</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-black">WordPress Development</a>
+                                </li>
+                                <li><a href="#" class="text-black">Digital Marketing</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-12 mb-4 mb-md-0">
+                            <h5>Support</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-black">Help Center</a></li>
+                                <li><a href="#" class="text-black">FAQ</a></li>
+                                <li><a href="#" class="text-black">Contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-12 mb-4 mb-md-0">
+                            <h5>Company</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-black">About us</a></li>
+                                <li><a href="#" class="text-black">Services</a></li>
+                                <li><a href="#" class="text-black">Pricing</a></li>
+                                <li><a href="#" class="text-black">Careers</a></li>
+                                <li>
+                                    <a href="#" class="text-black">Terms and Conditions</a>
+                                </li>
+                                <li><a href="#" class="text-black">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

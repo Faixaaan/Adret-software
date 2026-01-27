@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adret Software</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./Assets/Css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Font Awesome CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-xl navbar-light py-1">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Left: Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="/" style="gap: 6px">
+                <img src="./Assets/Images/Adret-Software.png" alt="Adret Logo"
+                    style="height: 55px; object-fit: contain; display: block" />
+            </a>
+
+            <!-- Toggler (Drawer trigger for mobile) -->
+            <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Desktop Navbar -->
+            <div class="collapse navbar-collapse justify-content-end d-none d-xl-flex" id="navbarNavAltMarkup">
+                <div class="navbar-nav align-items-center">
+                    <a class="nav-link " aria-current="page" href="/">Home</a>
+                    <a class="nav-link" href="/Aboutus.html">About us</a>
+                    <a class="nav-link" href="/client.html">Client</a>
+                    <a class="nav-link" href="/hire-us">Hire us</a>
+                    <a class="nav-link " href="/service.html">Services</a>
+                    <a class="nav-link " href="/contactUs.html">Contact us</a>
+                    <a class="nav-link active" href="/Blog.html">Blog</a>
+                    <a class="nav-link" href="/get-started">GET STARTED</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Drawer for Mobile/Tablet -->
+    <div class="offcanvas offcanvas-end d-xl-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="navbar-nav">
+                <a class="nav-link " aria-current="page" href="/">Home</a>
+                <a class="nav-link " href="/Aboutus.html">About us</a>
+                <a class="nav-link" href="/client.html">Client</a>
+                <a class="nav-link" href="/hire-us">Hire us</a>
+                <a class="nav-link " href="/service.html">Services</a>
+                <a class="nav-link " href="/contactUs.html">Contact us</a>
+                <a class="nav-link active" href="/Blog.html">Blog</a>
+                <a class="nav-link" href="/get-started">GET STARTED</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner section -->
+    <div class="service-banner position-relative">
+        <img src="./Assets/Images/contact-banner.png" alt="Banner" class="w-100 d-block service-banner-image" />
+
+        <!-- keep container for alignment -->
+        <div class="container">
+            <div class="banner-content">
+                <h1>Privacy Policy</h1>
+                <p>Protecting your privacy is our commitment</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- privacy policy part  -->
+    <section class="privacy-policy-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Last Updated -->
+                    <div class="last-updated mb-4">
+                        <p class="text-muted">
+                            <i class="fas fa-calendar-alt me-2"></i>
+                            Last Updated: <strong>January 15, 2024</strong>
+                        </p>
+                    </div>
+
+                    <!-- Introduction -->
+                    <div class="privacy-intro mb-5">
+                        <p class="lead">
+                            At Adret Software, we take your privacy seriously. This Privacy Policy explains how we
+                            collect, use, disclose, and safeguard your information when you visit our website or use our
+                            services.
+                        </p>
+                    </div>
+
+                    <!-- Main Content -->
+                    <div class="privacy-content">
+                        <!-- Section 1 -->
+                        <div class="policy-section mb-5">
+                            <h2 class="section-title">
+                                <span class="title-number">1.</span>
+                                Information We Collect
+                            </h2>
+                            <div class="section-content">
+                                <h4 class="subsection-title">Personal Information</h4>
+                                <p>We may collect personal information that you voluntarily provide to us when you:</p>
+                                <ul class="privacy-list">
+                                    <li>Register on our website</li>
+                                    <li>Subscribe to our newsletter</li>
+                                    <li>Fill out contact forms</li>
+                                    <li>Request information about our services</li>
+                                    <li>Apply for a job</li>
+                                </ul>
+                                <p>This information may include your name, email address, phone number, company name,
+                                    and any other details you choose to provide.</p>
+
+                                <h4 class="subsection-title mt-4">Automatically Collected Information</h4>
+                                <p>When you visit our website, we automatically collect certain information about your
+                                    device, including:</p>
+                                <ul class="privacy-list">
+                                    <li>IP address</li>
+                                    <li>Browser type and version</li>
+                                    <li>Operating system</li>
+                                    <li>Referring website</li>
+                                    <li>Pages viewed and time spent</li>
+                                    <li>Clickstream data</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Section 2 -->
+                        <div class="policy-section mb-5">
+                            <h2 class="section-title">
+                                <span class="title-number">2.</span>
+                                How We Use Your Information
+                            </h2>
+                            <div class="section-content">
+                                <p>We use the information we collect for various purposes, including:</p>
+                                <div class="usage-grid">
+                                    <div class="usage-item">
+                                        <div class="usage-icon">
+                                            <i class="fas fa-cogs"></i>
+                                        </div>
+                                        <h5>Service Delivery</h5>
+                                        <p>To provide and maintain our services</p>
+                                    </div>
+                                    <div class="usage-item">
+                                        <div class="usage-icon">
+                                            <i class="fas fa-comments"></i>
+                                        </div>
+                                        <h5>Communication</h5>
+                                        <p>To respond to your inquiries and provide support</p>
+                                    </div>
+                                    <div class="usage-item">
+                                        <div class="usage-icon">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                        <h5>Analytics</h5>
+                                        <p>To analyze website usage and improve our services</p>
+                                    </div>
+                                    <div class="usage-item">
+                                        <div class="usage-icon">
+                                            <i class="fas fa-bullhorn"></i>
+                                        </div>
+                                        <h5>Marketing</h5>
+                                        <p>To send promotional materials (with your consent)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 3 -->
+                        <div class="policy-section mb-5">
+                            <h2 class="section-title">
+                                <span class="title-number">3.</span>
+                                Cookies and Tracking Technologies
+                            </h2>
+                            <div class="section-content">
+                                <p>We use cookies and similar tracking technologies to track activity on our website and
+                                    hold certain information.</p>
+
+                                <div class="cookie-types">
+                                    <div class="cookie-type">
+                                        <h5><i class="fas fa-cookie-bite text-warning"></i> Essential Cookies</h5>
+                                        <p>Necessary for the website to function properly</p>
+                                    </div>
+                                    <div class="cookie-type">
+                                        <h5><i class="fas fa-chart-bar text-info"></i> Analytics Cookies</h5>
+                                        <p>Help us understand how visitors interact with our website</p>
+                                    </div>
+                                    <div class="cookie-type">
+                                        <h5><i class="fas fa-ad text-success"></i> Marketing Cookies</h5>
+                                        <p>Used to track visitors across websites for marketing</p>
+                                    </div>
+                                </div>
+
+                                <div class="cookie-control mt-4">
+                                    <h5>Cookie Preferences</h5>
+                                    <p>You can control cookies through your browser settings. However, disabling cookies
+                                        may affect your experience on our website.</p>
+                                    <button class="btn btn-outline-primary btn-sm mt-2" id="cookieSettingsBtn">
+                                        <i class="fas fa-sliders-h me-2"></i>Cookie Settings
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 4 -->
+                        <div class="policy-section mb-5">
+                            <h2 class="section-title">
+                                <span class="title-number">4.</span>
+                                Data Security
+                            </h2>
+                            <div class="section-content">
+                                <div class="security-features">
+                                    <div class="security-item">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <div>
+                                            <h5>Encryption</h5>
+                                            <p>We use SSL encryption to protect data transmission</p>
+                                        </div>
+                                    </div>
+                                    <div class="security-item">
+                                        <i class="fas fa-lock"></i>
+                                        <div>
+                                            <h5>Access Control</h5>
+                                            <p>Limited access to personal information</p>
+                                        </div>
+                                    </div>
+                                    <div class="security-item">
+                                        <i class="fas fa-history"></i>
+                                        <div>
+                                            <h5>Regular Audits</h5>
+                                            <p>Regular security assessments and updates</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 5 -->
+                        <div class="policy-section mb-5">
+                            <h2 class="section-title">
+                                <span class="title-number">5.</span>
+                                Your Rights
+                            </h2>
+                            <div class="section-content">
+                                <p>Depending on your location, you may have the following rights regarding your personal
+                                    data:</p>
+
+                                <div class="rights-grid">
+                                    <div class="right-item">
+                                        <i class="fas fa-eye"></i>
+                                        <span>Right to Access</span>
+                                    </div>
+                                    <div class="right-item">
+                                        <i class="fas fa-edit"></i>
+                                        <span>Right to Rectification</span>
+                                    </div>
+                                    <div class="right-item">
+                                        <i class="fas fa-trash-alt"></i>
+                                        <span>Right to Erasure</span>
+                                    </div>
+                                    <div class="right-item">
+                                        <i class="fas fa-ban"></i>
+                                        <span>Right to Restrict Processing</span>
+                                    </div>
+                                    <div class="right-item">
+                                        <i class="fas fa-download"></i>
+                                        <span>Right to Data Portability</span>
+                                    </div>
+                                    <div class="right-item">
+                                        <i class="fas fa-hand-paper"></i>
+                                        <span>Right to Object</span>
+                                    </div>
+                                </div>
+
+                                <div class="contact-rights mt-4">
+                                    <div class="alert alert-info">
+                                        <h5><i class="fas fa-info-circle"></i> Exercising Your Rights</h5>
+                                        <p>To exercise any of these rights, please contact us at
+                                            <strong>privacy@adretsoftware.com</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 6 -->
+                        <div class="policy-section mb-5">
+                            <h2 class="section-title">
+                                <span class="title-number">6.</span>
+                                Third-Party Disclosure
+                            </h2>
+                            <div class="section-content">
+                                <p>We do not sell, trade, or otherwise transfer your personal information to outside
+                                    parties except in the following circumstances:</p>
+
+                                <div class="disclosure-table">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Third Party</th>
+                                                    <th>Purpose</th>
+                                                    <th>Data Shared</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Google Analytics</td>
+                                                    <td>Website analytics</td>
+                                                    <td>Usage data, anonymized</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MailChimp</td>
+                                                    <td>Email marketing</td>
+                                                    <td>Email addresses, names</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Payment Processors</td>
+                                                    <td>Payment processing</td>
+                                                    <td>Payment information</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 7 -->
+                        <div class="policy-section mb-5">
+                            <h2 class="section-title">
+                                <span class="title-number">7.</span>
+                                Contact Information
+                            </h2>
+                            <div class="section-content">
+                                <div class="contact-info-card">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="contact-item">
+                                                <i class="fas fa-envelope"></i>
+                                                <div>
+                                                    <h6>Email</h6>
+                                                    <p>privacy@adretsoftware.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="contact-item">
+                                                <i class="fas fa-phone"></i>
+                                                <div>
+                                                    <h6>Phone</h6>
+                                                    <p>+1 (555) 123-4567</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mt-3">
+                                            <div class="contact-item">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                                <div>
+                                                    <h6>Address</h6>
+                                                    <p>123 Business Street, Suite 100, Tech City, TC 12345</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Agreement -->
+                        <div class="agreement-section mt-5">
+                            <div class="alert alert-light border">
+                                <h5><i class="fas fa-file-signature"></i> Acceptance of Terms</h5>
+                                <p>By using our website, you consent to our Privacy Policy. If you do not agree with any
+                                    part of this policy, please do not use our website.</p>
+                                <p class="mb-0"><strong>Changes to this Policy:</strong> We may update this Privacy
+                                    Policy from time to time. We will notify you of any changes by posting the new
+                                    Privacy Policy on this page and updating the "Last Updated" date.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <footer class="footer ">
+        <div class="container">
+            <div class="row">
+                <!-- Logo Section (4 columns) -->
+                <div class="col-lg-4 col-md-12 mb-4 text-center text-lg-start">
+                    <img src="./Assets/Images/Adret-Software.png" alt="Adret Logo" class="mb-3"
+                        style="max-width: 150px" />
+                    <p class="footer-paragraph">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry’s standard dummy text.
+                    </p>
+
+                    <div class="social-icons mt-3 d-flex justify-content-center justify-content-lg-start gap-3">
+                        <a href="#"><img src="./Assets/Images/instagram-brands-solid-full.svg" alt="" /></a>
+                        <a href="#"><img src="./Assets/Images/facebook-brands-solid-full.svg" alt="" /></a>
+                        <a href="#"><img src="./Assets/Images/twitter-brands-solid-full.svg" alt="" /></a>
+                        <a href="#"><img src="./Assets/Images/linkedin-brands-solid-full.svg" alt="" /></a>
+                    </div>
+
+                    <!-- Social Icons Below Paragraph -->
+                </div>
+
+                <!-- Links Section (8 columns divided into 3) -->
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <div class="col-md-5 col-12 mb-4 mb-md-0">
+                            <h5>Services</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-black">Website Design</a></li>
+                                <li>
+                                    <a href="#" class="text-black">Web Application Development</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-black">Android Development</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-black">Node JS Development</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-black">WordPress Development</a>
+                                </li>
+                                <li><a href="#" class="text-black">Digital Marketing</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-12 mb-4 mb-md-0">
+                            <h5>Support</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-black">Help Center</a></li>
+                                <li><a href="#" class="text-black">FAQ</a></li>
+                                <li><a href="#" class="text-black">Contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-12 mb-4 mb-md-0">
+                            <h5>Company</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="./Aboutus.html" class="text-black">About us</a></li>
+                                <li><a href="./service.html" class="text-black">Services</a></li>
+                                <li><a href="#" class="text-black">Pricing</a></li>
+                                <li><a href="#" class="text-black">Careers</a></li>
+                                <li>
+                                    <a href="#" class="text-black">Terms and Conditions</a>
+                                </li>
+                                <li><a href="#" class="text-black">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
